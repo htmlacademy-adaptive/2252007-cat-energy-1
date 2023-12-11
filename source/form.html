@@ -45,61 +45,59 @@
     <!-- Main -->
     <main class="main-container">
       <div class="main-container__wrapper">
-        <h1 class="main-container__title program-title">Подбор программы</h1>
-        <form
-          class="program-form"
-          action="https://echo.htmlacademy.ru/"
-          method="get"
-        >
-          <h2 class="program-form__title">
+        <h1 class="main-container__title">Подбор программы</h1>
+
+        <!-- Form -->
+        <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+          <h2 class="form__title">
             Заполните анкету, и мы подберем программу питания для вашего кота
           </h2>
 
           <!-- Cat -->
-          <div class="program-form__row cat">
-            <div class="program-form__cat cat-data">
-              <label class="cat-data__title" for="cat-data__name">ИМЯ:*</label>
+          <div class="form__field form__field--cat">
+            <div class="form__row">
+              <label class="form__label" for="cat-name">ИМЯ:*</label>
               <input
-                class="cat-data__field data-field"
+                class="form__control"
                 type="text"
                 placeholder="Барсик"
-                name="cat-data__name"
-                id="cat-data__name"
+                name="cat-name"
+                id="cat-name"
                 required
               />
+            </div>
 
-              <label class="cat-data__title" for="cat-data__weight"
-                >Вес (кг):*</label
-              >
+            <div class="form__row">
+              <label class="form__label" for="cat-age">Возраст (лет):</label>
               <input
-                class="cat-data__field data-field"
+                class="form__control"
                 type="number"
                 placeholder="7"
-                name="cat-data__weight"
-                id="cat-data__weight"
+                name="cat-age"
+                id="cat-age"
                 required
               />
+            </div>
 
-              <label class="cat-data__title" for="cat-data__age"
-                >Возраст (лет):</label
-              >
+            <div class="form__row">
+              <label class="form__label" for="cat-weight">Вес (кг):*</label>
               <input
-                class="cat-data__field data-field"
+                class="form__control"
                 type="number"
                 placeholder="7"
-                name="cat-data__age"
-                id="cat-data__age"
+                name="cat-weight"
+                id="cat-weight"
                 required
               />
             </div>
 
             <!-- Radio -->
-            <div class="program-form__cat radio">
+            <div class="form__field radio">
               <ul class="radio__list">
                 <li class="radio__item">
-                  <label class="control control-radio">
+                  <label class="form__label form__label--radio">
                     <input
-                      class="control__input visually-hidden"
+                      class="form__control visually-hidden"
                       name="loss"
                       value="похудение"
                       type="radio"
@@ -109,9 +107,9 @@
                   </label>
                 </li>
                 <li class="radio__item">
-                  <label class="control control-radio">
+                  <label class="form__label form__label--radio">
                     <input
-                      class="control__input visually-hidden"
+                      class="form__control visually-hidden"
                       name="gain"
                       value="Набор массы"
                       type="radio"
@@ -120,9 +118,9 @@
                   </label>
                 </li>
                 <li class="radio__item">
-                  <label class="control control-radio">
+                  <label class="form__label form__label--radio">
                     <input
-                      class="control__input visually-hidden"
+                      class="form__control visually-hidden"
                       name="need-advise"
                       value="Не знаю (Нужен ваш совет)"
                       type="radio"
@@ -135,13 +133,11 @@
           </div>
 
           <!-- Contacts -->
-          <div class="program-form__row contacts">
-            <h3 class="program-form__title">
-              Контактные данные (владельца кота)
-            </h3>
-            <label class="contacts__title" for="email">E-mail:*</label>
+          <div class="form__field contacts">
+            <h3 class="form__title">Контактные данные (владельца кота)</h3>
+            <label class="form__label" for="email">E-mail:*</label>
             <input
-              class="contacts__field data-field"
+              class="form__control form__control--contacts"
               type="email"
               placeholder="кuklachev@gmail.com"
               name="email"
@@ -149,9 +145,9 @@
               required
             />
 
-            <label class="contacts__title" for="phone">Телефон:*</label>
+            <label class="form__label" for="phone">Телефон:*</label>
             <input
-              class="contacts__field data-field"
+              class="form__control form__control--contacts"
               type="tel"
               placeholder="8 (960) 900-60-90"
               name="phone"
@@ -161,14 +157,14 @@
           </div>
 
           <!-- Comment -->
-          <div class="program-form__row comment">
-            <h3 class="program-form__title">Комментарий</h3>
+          <div class="form__field comment">
+            <h3 class="form__title">Комментарий</h3>
             <label class="visually-hidden" for="comment"
               >О питомце в свободной форме</label
             ><br />
 
             <textarea
-              class="comment__field data-field"
+              class="form__control form__control--texarea"
               placeholder="Расскажите обо всех повадках кота"
               name="comment"
               id="comment"
@@ -178,70 +174,80 @@
           </div>
 
           <!-- Additionally -->
-          <div class="program-form__row additionally checkbox">
-            <h3 class="program-form__title">Дополнительно</h3>
+          <div class="form__field additionally checkbox">
+            <h3 class="form__title">Дополнительно</h3>
             <ul class="checkbox__list">
               <li class="checkbox__item checkbox__item--checked">
-                <label class="control" for="sweetener">
+                <label
+                  class="form__label form__label--checkbox"
+                  for="sweetener"
+                >
                   <input
-                    class="visually-hidden control__input"
+                    class="visually-hidden form__control form__control--checkbox"
                     name="sweetener"
                     type="checkbox"
                     id="sweetener"
                     checked
                   />
                   <span class="checkbox__control-mark"></span>
-                  <span class="control__label">сахарозаменитель</span>
+                  <span class="control__label control__label--checkbox"
+                    >сахарозаменитель</span
+                  >
                 </label>
               </li>
 
               <li class="checkbox__item">
-                <label class="control" for="water">
+                <label class="form__label form__label--checkbox" for="water">
                   <input
-                    class="visually-hidden control__input"
+                    class="visually-hidden form__control form__control--checkbox"
                     name="water"
                     type="checkbox"
                     id="water"
                   />
                   <span class="checkbox__control-mark"></span>
-                  <span class="control__label">питьевая вода</span>
+                  <span class="control__label control__label--checkbox"
+                    >питьевая вода</span
+                  >
                 </label>
               </li>
 
               <li class="checkbox__item">
-                <label class="control" for="milk">
+                <label class="form__label form__label--checkbox" for="milk">
                   <input
-                    class="visually-hidden control__input"
+                    class="visually-hidden form__control form__control--checkbox"
                     name="milk"
                     type="checkbox"
                     id="milk"
                   />
                   <span class="checkbox__control-mark"></span>
-                  <span class="control__label">молоко</span>
+                  <span class="control__label control__label--checkbox"
+                    >молоко</span
+                  >
                 </label>
               </li>
 
               <li class="checkbox__item">
-                <label class="control" for="vitamins">
+                <label class="form__label form__label--checkbox" for="vitamins">
                   <input
-                    class="visually-hidden control__input"
+                    class="visually-hidden form__control form__control--checkbox"
                     name="vitamins"
                     type="checkbox"
                     id="vitamins"
                   />
                   <span class="checkbox__control-mark"></span>
-                  <span class="control__label">витамины</span>
+                  <span class="control__label control__label--checkbox"
+                    >витамины</span
+                  >
                 </label>
               </li>
             </ul>
           </div>
 
           <!-- Button -->
-          <div class="program-form__submit submit">
-            <button class="submit__button" type="submit">
-              отправить заявку
-            </button>
-            <p class="submit__text">* — Обязательные поля</p>
+          <button class="submit__button" type="submit">
+            отправить заявку
+          </button>
+          <p class="submit__text">* — Обязательные поля</p>
           </div>
         </form>
       </div>
