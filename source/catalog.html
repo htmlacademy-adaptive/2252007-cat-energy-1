@@ -31,11 +31,11 @@
             <li class="nav-list__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="nav-list__item">
-              <a href="catalog.html">Каталог продукции</a>
-            </li>
             <li class="nav-list__item nav-list__item--current">
-              <a href="#">Подбор программы</a>
+              <a href="#">Каталог продукции</a>
+            </li>
+            <li class="nav-list__item">
+              <a href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -44,206 +44,311 @@
 
     <!-- Main -->
     <main class="main-container">
-      <div class="main-container__wrapper">
-        <h1 class="main-container__title program-title">Подбор программы</h1>
-        <form
-          class="program-form"
-          action="https://echo.htmlacademy.ru/"
-          method="get"
-        >
-          <h2 class="program-form__title">
-            Заполните анкету, и мы подберем программу питания для вашего кота
-          </h2>
-
-          <!-- Cat -->
-          <div class="program-form__row cat">
-            <div class="program-form__cat cat-data">
-              <label class="cat-data__title" for="cat-data__name">ИМЯ:*</label>
-              <input
-                class="cat-data__field data-field"
-                type="text"
-                placeholder="Барсик"
-                name="cat-data__name"
-                id="cat-data__name"
-                required
+      <div class="main-container__wrapper catalog">
+        <h1 class="main-container__title catalog-title">Каталог продукции</h1>
+        <ul class="catalog__list main-catalog">
+          <li class="catalog__card card">
+            <a class="card__link" href="#">
+              <img
+                class="card__image"
+                width="161"
+                height="172"
+                src="images/catalog-1.png"
+                alt="Курица 500г."
               />
-
-              <label class="cat-data__title" for="cat-data__weight"
-                >Вес (кг):*</label
-              >
-              <input
-                class="cat-data__field data-field"
-                type="number"
-                placeholder="7"
-                name="cat-data__weight"
-                id="cat-data__weight"
-                required
-              />
-
-              <label class="cat-data__title" for="cat-data__age"
-                >Возраст (лет):</label
-              >
-              <input
-                class="cat-data__field data-field"
-                type="number"
-                placeholder="7"
-                name="cat-data__age"
-                id="cat-data__age"
-                required
-              />
+            </a>
+            <div class="card__text">
+              <h2 class="card__title">Cat Energy PRO 500 г</h2>
+              <div class="card__description">
+                <div class="card__row">
+                  <span class="card__spec">Масса</span>
+                  <span class="card__meaning">500 г</span>
+                </div>
+                <div class="card__row">
+                  <span class="card__spec">Вкус</span>
+                  <span class="card__meaning">Курица</span>
+                </div>
+                <div class="card__row">
+                  <span class="card__spec">Цена</span>
+                  <span class="card__meaning">700 ₽</span>
+                </div>
+              </div>
             </div>
-
-            <!-- Radio -->
-            <div class="program-form__cat radio">
-              <ul class="radio__list">
-                <li class="radio__item">
-                  <label class="control control-radio">
-                    <input
-                      class="control__input visually-hidden"
-                      name="loss"
-                      value="похудение"
-                      type="radio"
-                      checked
-                    />
-                    <span class="control-label">похудение</span>
-                  </label>
-                </li>
-                <li class="radio__item">
-                  <label class="control control-radio">
-                    <input
-                      class="control__input visually-hidden"
-                      name="gain"
-                      value="Набор массы"
-                      type="radio"
-                    />
-                    <span class="control-label">Набор массы</span>
-                  </label>
-                </li>
-                <li class="radio__item">
-                  <label class="control control-radio">
-                    <input
-                      class="control__input visually-hidden"
-                      name="need-advise"
-                      value="Не знаю (Нужен ваш совет)"
-                      type="radio"
-                    />
-                    <span class="control-label">Не знаю (Нужен ваш совет)</span>
-                  </label>
-                </li>
-              </ul>
+            <button class="catalog__button" type="button">заказать</button>
+          </li>
+          <li class="catalog__card card">
+            <a class="card__link" href="#">
+              <img
+                class="card__image"
+                width="172"
+                height="196"
+                src="images/catalog-2.png"
+                alt="Курица 1000г."
+              />
+            </a>
+            <div class="card__text">
+              <h2 class="card__title">Cat Energy PRO 1000 г</h2>
+              <div class="card__description">
+                <div class="card__row">
+                  <span class="card__spec">Масса</span>
+                  <span class="card__meaning">1000 г</span>
+                </div>
+                <div class="card__row">
+                  <span class="card__spec">Вкус</span>
+                  <span class="card__meaning">Курица</span>
+                </div>
+                <div class="card__row">
+                  <span class="card__spec">Цена</span>
+                  <span class="card__meaning">1000 ₽</span>
+                </div>
+              </div>
             </div>
-          </div>
+            <button class="catalog__button" type="button">заказать</button>
+          </li>
+          <li class="catalog__card card">
+            <a class="card__link" href="#">
+              <img
+                class="card__image"
+                width="161"
+                height="172"
+                src="images/catalog-3.png"
+                alt="Рыба 500г."
+              />
+            </a>
+            <div class="card__text">
+              <h2 class="card__title">Cat Energy PRO 500 г</h2>
+              <div class="card__description">
+                <div class="card__row">
+                  <span class="card__spec">Масса</span>
+                  <span class="card__meaning">500 г</span>
+                </div>
+                <div class="card__row">
+                  <span class="card__spec">Вкус</span>
+                  <span class="card__meaning">Рыба</span>
+                </div>
+                <div class="card__row">
+                  <span class="card__spec">Цена</span>
+                  <span class="card__meaning">700 ₽</span>
+                </div>
+              </div>
+            </div>
+            <button class="catalog__button" type="button">заказать</button>
+          </li>
+          <li class="catalog__card card">
+            <a class="card__link" href="#">
+              <img
+                class="card__image"
+                width="172"
+                height="196"
+                src="images/catalog-4.png"
+                alt="Рыба 1000г."
+              />
+            </a>
+            <div class="card__text">
+              <h2 class="card__title">Cat Energy PRO 1000 г</h2>
+              <div class="card__description">
+                <div class="card__row">
+                  <span class="card__spec">Масса</span>
+                  <span class="card__meaning">1000 г</span>
+                </div>
+                <div class="card__row">
+                  <span class="card__spec">Вкус</span>
+                  <span class="card__meaning">Рыба</span>
+                </div>
+                <div class="card__row">
+                  <span class="card__spec">Цена</span>
+                  <span class="card__meaning">1000 ₽</span>
+                </div>
+              </div>
+            </div>
+            <button class="catalog__button" type="button">заказать</button>
+          </li>
 
-          <!-- Contacts -->
-          <div class="program-form__row contacts">
-            <h3 class="program-form__title">
-              Контактные данные (владельца кота)
-            </h3>
-            <label class="contacts__title" for="email">E-mail:*</label>
-            <input
-              class="contacts__field data-field"
-              type="email"
-              placeholder="кuklachev@gmail.com"
-              name="email"
-              id="email"
-              required
-            />
+          <li class="catalog__card card">
+            <a class="card__link" href="#">
+              <img
+                class="card__image"
+                width="161"
+                height="172"
+                src="images/catalog-5.png"
+                alt="Гречка 500г."
+              />
+            </a>
+            <div class="card__text">
+              <h2 class="card__title">Cat Energy SLIM 500 г</h2>
+              <div class="card__description">
+                <div class="card__row">
+                  <span class="card__spec">Масса</span>
+                  <span class="card__meaning">500 г</span>
+                </div>
+                <div class="card__row">
+                  <span class="card__spec">Вкус</span>
+                  <span class="card__meaning">Гречка</span>
+                </div>
+                <div class="card__row">
+                  <span class="card__spec">Цена</span>
+                  <span class="card__meaning">400 ₽</span>
+                </div>
+              </div>
+            </div>
+            <button class="catalog__button" type="button">заказать</button>
+          </li>
+          <li class="catalog__card card">
+            <a class="card__link" href="#">
+              <img
+                class="card__image"
+                width="172"
+                height="196"
+                src="images/catalog-6.png"
+                alt="Гречка 1000г."
+              />
+            </a>
+            <div class="card__text">
+              <h2 class="card__title">Cat Energy SLIM 1000 г</h2>
+              <div class="card__description">
+                <div class="card__row">
+                  <span class="card__spec">Масса</span>
+                  <span class="card__meaning">1000 г</span>
+                </div>
+                <div class="card__row">
+                  <span class="card__spec">Вкус</span>
+                  <span class="card__meaning">Гречка</span>
+                </div>
+                <div class="card__row">
+                  <span class="card__spec">Цена</span>
+                  <span class="card__meaning">700 ₽</span>
+                </div>
+              </div>
+            </div>
+            <button class="catalog__button" type="button">заказать</button>
+          </li>
+          <li class="catalog__card card">
+            <a class="card__link" href="#">
+              <img
+                class="card__image"
+                width="161"
+                height="172"
+                src="images/catalog-7.png"
+                alt="Рис 500г."
+              />
+            </a>
+            <div class="card__text">
+              <h2 class="card__title">Cat Energy SLIM 500 г</h2>
+              <div class="card__description">
+                <div class="card__row">
+                  <span class="card__spec">Масса</span>
+                  <span class="card__meaning">500 г</span>
+                </div>
+                <div class="card__row">
+                  <span class="card__spec">Вкус</span>
+                  <span class="card__meaning">Рис</span>
+                </div>
+                <div class="card__row">
+                  <span class="card__spec">Цена</span>
+                  <span class="card__meaning">500 ₽</span>
+                </div>
+              </div>
+            </div>
+            <button class="catalog__button" type="button">заказать</button>
+          </li>
 
-            <label class="contacts__title" for="phone">Телефон:*</label>
-            <input
-              class="contacts__field data-field"
-              type="tel"
-              placeholder="8 (960) 900-60-90"
-              name="phone"
-              id="phone"
-              required
-            />
-          </div>
+          <li class="catalog__card card last-card">
+            <svg
+              class="just-example__will-delete__write-in-css"
+              xmlns="http://www.w3.org/2000/svg"
+              width="61"
+              height="61"
+              viewBox="0 0 61 61"
+              fill="none"
+            >
+              <line
+                x1="31.5"
+                y1="0.5"
+                x2="31.5"
+                y2="60.5"
+                stroke="#D3D3D3"
+                stroke-width="2"
+              />
+              <line
+                x1="60.5"
+                y1="31.5"
+                x2="0.5"
+                y2="31.5"
+                stroke="#D3D3D3"
+                stroke-width="2"
+              />
+            </svg>
+            <div class="card__text">
+              <h2 class="card__title">Показать еще 100500 товаров</h2>
+              <div class="card__description">
+                <div class="card__row">
+                  <span class="card__spec card__more"
+                    >На самом деле вкусов гораздо больше!</span
+                  >
+                </div>
+              </div>
+            </div>
+            <button
+              class="catalog__button catalog__button-more button-more"
+              type="button"
+            >
+              заказать
+            </button>
+          </li>
+        </ul>
 
-          <!-- Comment -->
-          <div class="program-form__row comment">
-            <h3 class="program-form__title">Комментарий</h3>
-            <label class="visually-hidden" for="comment"
-              >О питомце в свободной форме</label
-            ><br />
-
-            <textarea
-              class="comment__field data-field"
-              placeholder="Расскажите обо всех повадках кота"
-              name="comment"
-              id="comment"
-              cols="100"
-              rows="5"
-            ></textarea>
-          </div>
-
-          <!-- Additionally -->
-          <div class="program-form__row additionally checkbox">
-            <h3 class="program-form__title">Дополнительно</h3>
-            <ul class="checkbox__list">
-              <li class="checkbox__item checkbox__item--checked">
-                <label class="control" for="sweetener">
-                  <input
-                    class="visually-hidden control__input"
-                    name="sweetener"
-                    type="checkbox"
-                    id="sweetener"
-                    checked
-                  />
-                  <span class="checkbox__control-mark"></span>
-                  <span class="control__label">сахарозаменитель</span>
-                </label>
+        <!-- Additional -->
+        <div class="additional">
+          <h2 class="additional__title">Дополнительные товары</h2>
+          <div class="additional__products">
+            <ul class="udditional__list">
+              <li class="additional__item">
+                <span class="product">Сахарозаменитель</span>
+                <span class="amount amount-price">1 упаковка (100 г)</span>
+                <span class="price amount-price">200 ₽</span>
+                <button class="additional__button" type="button">
+                  заказать
+                </button>
               </li>
-
-              <li class="checkbox__item">
-                <label class="control" for="water">
-                  <input
-                    class="visually-hidden control__input"
-                    name="water"
-                    type="checkbox"
-                    id="water"
-                  />
-                  <span class="checkbox__control-mark"></span>
-                  <span class="control__label">питьевая вода</span>
-                </label>
+              <li class="additional__item">
+                <span class="product">Питьевая вода</span>
+                <span class="amount amount-price">5 литров</span>
+                <span class="price amount-price">50 ₽</span>
+                <button class="additional__button" type="button">
+                  заказать
+                </button>
               </li>
-
-              <li class="checkbox__item">
-                <label class="control" for="milk">
-                  <input
-                    class="visually-hidden control__input"
-                    name="milk"
-                    type="checkbox"
-                    id="milk"
-                  />
-                  <span class="checkbox__control-mark"></span>
-                  <span class="control__label">молоко</span>
-                </label>
+              <li class="additional__item">
+                <span class="product">молоко</span>
+                <span class="amount amount-price">1 литр</span>
+                <span class="price amount-price">100 ₽</span>
+                <button class="additional__button" type="button">
+                  заказать
+                </button>
               </li>
-
-              <li class="checkbox__item">
-                <label class="control" for="vitamins">
-                  <input
-                    class="visually-hidden control__input"
-                    name="vitamins"
-                    type="checkbox"
-                    id="vitamins"
-                  />
-                  <span class="checkbox__control-mark"></span>
-                  <span class="control__label">витамины</span>
-                </label>
+              <li class="additional__item">
+                <span class="product">витамины</span>
+                <span class="amount amount-price">1 упаковка (30 г)</span>
+                <span class="price amount-price">300 ₽</span>
+                <button class="additional__button" type="button">
+                  заказать
+                </button>
               </li>
             </ul>
           </div>
-
-          <!-- Button -->
-          <div class="program-form__submit submit">
-            <button class="submit__button" type="submit">
-              отправить заявку
-            </button>
-            <p class="submit__text">* — Обязательные поля</p>
+          <div class="additional__gift gift">
+            <img
+              class="gitf__image"
+              src="images/gift.png"
+              width="245"
+              height="288"
+              alt="Кот в рюкзаке."
+            />
+            <p class="gift__text">
+              Закажите все и получите чехол для кота в подарок!
+            </p>
           </div>
-        </form>
+        </div>
       </div>
     </main>
 
