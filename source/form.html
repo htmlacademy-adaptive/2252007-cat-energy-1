@@ -95,37 +95,39 @@
             <div class="form__field radio">
               <ul class="radio__list">
                 <li class="radio__item">
-                  <label class="form__label form__label--radio">
+                  <label class="radio__label">
                     <input
-                      class="form__control visually-hidden"
+                      class="radio__control visually-hidden"
                       name="loss"
                       value="похудение"
                       type="radio"
                       checked
                     />
-                    <span class="control-label">похудение</span>
+                    <span class="radio__control-label">похудение</span>
                   </label>
                 </li>
                 <li class="radio__item">
-                  <label class="form__label form__label--radio">
+                  <label class="radio__label">
                     <input
-                      class="form__control visually-hidden"
+                      class="radio__control visually-hidden"
                       name="gain"
                       value="Набор массы"
                       type="radio"
                     />
-                    <span class="control-label">Набор массы</span>
+                    <span class="radio__control-label">Набор массы</span>
                   </label>
                 </li>
                 <li class="radio__item">
-                  <label class="form__label form__label--radio">
+                  <label class="radio__label">
                     <input
-                      class="form__control visually-hidden"
+                      class="radio__control visually-hidden"
                       name="need-advise"
                       value="Не знаю (Нужен ваш совет)"
                       type="radio"
                     />
-                    <span class="control-label">Не знаю (Нужен ваш совет)</span>
+                    <span class="radio__control-label"
+                      >Не знаю (Нужен ваш совет)</span
+                    >
                   </label>
                 </li>
               </ul>
@@ -173,69 +175,70 @@
             ></textarea>
           </div>
 
-          <!-- Additionally -->
-          <div class="form__field additionally checkbox">
+          <!-- Checkbox -->
+          <div class="form__field checkbox">
             <h3 class="form__title">Дополнительно</h3>
             <ul class="checkbox__list">
               <li class="checkbox__item checkbox__item--checked">
-                <label
-                  class="form__label form__label--checkbox"
-                  for="sweetener"
-                >
+                <label class="checkbox__label" for="sweetener">
                   <input
-                    class="visually-hidden form__control form__control--checkbox"
+                    class="visually-hidden checkbox__control"
                     name="sweetener"
                     type="checkbox"
                     id="sweetener"
                     checked
                   />
                   <span class="checkbox__control-mark"></span>
-                  <span class="control__label control__label--checkbox"
+                  <span
+                    class="checkbox__control-label checkbox__control-label--checkbox"
                     >сахарозаменитель</span
                   >
                 </label>
               </li>
 
               <li class="checkbox__item">
-                <label class="form__label form__label--checkbox" for="water">
+                <label class="checkbox__label" for="water">
                   <input
-                    class="visually-hidden form__control form__control--checkbox"
+                    class="visually-hidden checkbox__control"
                     name="water"
                     type="checkbox"
                     id="water"
                   />
                   <span class="checkbox__control-mark"></span>
-                  <span class="control__label control__label--checkbox"
+                  <span
+                    class="checkbox__control-label checkbox__control-label--checkbox"
                     >питьевая вода</span
                   >
                 </label>
               </li>
 
               <li class="checkbox__item">
-                <label class="form__label form__label--checkbox" for="milk">
+                <label class="checkbox__label" for="milk">
                   <input
-                    class="visually-hidden form__control form__control--checkbox"
+                    class="visually-hidden checkbox__control"
                     name="milk"
                     type="checkbox"
                     id="milk"
                   />
                   <span class="checkbox__control-mark"></span>
-                  <span class="control__label control__label--checkbox"
+                  <span
+                    class="checkbox__control-label checkbox__control-label--checkbox"
                     >молоко</span
                   >
                 </label>
               </li>
 
               <li class="checkbox__item">
-                <label class="form__label form__label--checkbox" for="vitamins">
+                <label class="checkbox__label" for="vitamins">
                   <input
-                    class="visually-hidden form__control form__control--checkbox"
+                    class="visually-hidden checkbox__control"
                     name="vitamins"
                     type="checkbox"
                     id="vitamins"
                   />
                   <span class="checkbox__control-mark"></span>
-                  <span class="control__label control__label--checkbox"
+                  <span
+                    class="checkbox__control-label checkbox__control-label--checkbox"
                     >витамины</span
                   >
                 </label>
@@ -244,8 +247,10 @@
           </div>
 
           <!-- Button -->
-          <button class="submit__button" type="submit">отправить заявку</button>
-          <p class="submit__text">* — Обязательные поля</p>
+          <button class="form__submit-button" type="submit">
+            отправить заявку
+          </button>
+          <p class="form__submit-text">* — Обязательные поля</p>
         </form>
       </div>
     </main>
