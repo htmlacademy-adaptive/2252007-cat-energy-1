@@ -1,0 +1,163 @@
+// Mobile
+.checkbox {
+  position: relative;
+}
+
+.checkbox::before {
+  content: "";
+  position: absolute;
+  background-color: #68b738;
+  height: 2px;
+  width: 100%;
+  top: 15px;
+  left: 0;
+  z-index: 1;
+}
+
+.checkbox__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 34px;
+}
+
+.checkbox__title {
+  color: #000000;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 26px;
+
+  margin-bottom: 34px;
+}
+
+.checkbox__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox__item {
+  margin-bottom: 15px;
+}
+
+.checkbox__item:last-child {
+  margin-bottom: 0;
+}
+
+.checkbox__control-label {
+  color: #444444;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.checkbox__label {
+  position: relative;
+  padding-left: 45px;
+  display: flex;
+  // align-items: center;
+}
+
+.checkbox__control {
+  position: relative;
+}
+
+.checkbox__control[type="checkbox"]:checked + .checkbox__control-mark {
+  background-image: url("../img/tick.svg");
+  background-position: center;
+}
+
+.checkbox__control-mark {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  background-repeat: no-repeat;
+  background-position: 7px 7px;
+  background-size: 26px;
+}
+
+// Desktop
+// /* Checkbox */
+// .checkbox__title--checkbox::after {
+//   content: "";
+//   position: absolute;
+//   top: 21px;
+//   /* left: 213px; */
+//   right: -100px;
+//   width: 1078px;
+//   height: 2px;
+//   background: #68b738;
+// }
+
+// .checkbox__title {
+// color: #000000;
+// font-family: "Oswald", "Arial", sans-serif;
+// font-size: 24px;
+// font-weight: 400;
+// line-height: 26px;
+
+// margin-bottom: 33px;
+//   margin-bottom: 57px;
+// }
+
+// .checkbox__list {
+//   margin: 0;
+//   padding: 0;
+//   width: 1220px;
+//   list-style: none;
+//   display: flex;
+//   justify-content: space-between;
+//   margin-bottom: 60px;
+// }
+
+// .checkbox__item {
+//   width: 225px;
+// }
+
+// .checkbox__control-label {
+//   color: #444444;
+//   font-family: "Oswald", sans-serif;
+//   font-size: 20px;
+//   font-weight: 400;
+//   text-transform: uppercase;
+//   padding-top: 5px;
+//   padding-bottom: 5px;
+// }
+
+// .checkbox__label {
+//   position: relative;
+//   padding-left: 60px;
+//   display: flex;
+//   align-items: center;
+// }
+
+// .checkbox__control {
+//   position: relative;
+// }
+
+// .checkbox__control[type="checkbox"]:checked + .checkbox__control-mark {
+//   background-image: url("../img/tick.svg");
+//   /* border: 1px solid #cdcdcd; */
+// }
+
+// .checkbox__control-mark {
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+//   width: 40px;
+//   height: 40px;
+//   border: 1px solid #cdcdcd;
+//   background-repeat: no-repeat;
+//   background-position: 7px 7px;
+//   background-size: 26px;
+// }
