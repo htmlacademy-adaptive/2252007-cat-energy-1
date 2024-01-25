@@ -1,23 +1,30 @@
 // Mobile
 .card {
   position: relative;
-  width: 280px;
+  // width: 280px;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   padding-top: 20px;
   padding-bottom: 25px;
   flex-direction: column;
-  // border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
 }
 
-.card:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  width: 320px;
-  height: 1px;
-  background: #ebebeb;
-  bottom: 0;
-  left: -20px;
+.card__wrapper {
+  width: 280px;
+  margin: 0 auto;
 }
+
+// .card:not(:last-child)::after {
+//   content: "";
+//   position: absolute;
+//   width: 320px;
+//   height: 1px;
+//   background: #ebebeb;
+//   bottom: 0;
+//   left: -20px;
+// }
 
 .card__container {
   display: flex;
