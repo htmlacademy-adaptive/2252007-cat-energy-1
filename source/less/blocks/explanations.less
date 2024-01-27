@@ -7,6 +7,11 @@
 .explanation__wrapper {
   width: 280px;
   margin: 0 auto;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    width: 709px;
+  }
 }
 
 .explanation__title {
@@ -18,6 +23,16 @@
   line-height: 40px;
   margin-bottom: 40px;
   text-align: left;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    margin-bottom: 32px;
+    text-align: left;
+  }
 }
 
 .explanation__list {
@@ -26,6 +41,16 @@
   display: flex;
   flex-direction: column;
   list-style: none;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 324px 324px;
+    gap: 59px;
+  }
 }
 
 // Desktop

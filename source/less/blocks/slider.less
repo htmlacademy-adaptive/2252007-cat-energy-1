@@ -3,11 +3,26 @@
   width: 280px;
   position: relative;
   padding-bottom: 40px;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    width: 709px;
+    position: relative;
+    padding-bottom: 101px;
+  }
 }
 
 .slider__list {
   list-style: none;
   padding: 0;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    width: 560px;
+    height: 512px;
+    margin: 0 auto;
+    padding: 0 74px 0 74px;
+  }
 }
 
 .slider__button {

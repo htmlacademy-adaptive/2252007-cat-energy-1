@@ -8,6 +8,11 @@
 .example__wrapper {
   width: 280px;
   margin: 0 auto;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    width: 709px;
+  }
 }
 
 .example__title {
@@ -18,8 +23,19 @@
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
+
   padding-top: 25px;
   margin-bottom: 40px;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+
+    padding-top: 45px;
+    margin-bottom: 60px;
+  }
 }
 
 .example__description {
@@ -31,6 +47,15 @@
   line-height: 18px;
   margin: 0;
   margin-bottom: 20px;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    margin-bottom: 55px;
+  }
 }
 
 .example__statistics {
@@ -87,6 +112,14 @@
   left: 24px;
 }
 
+// Tablet
+@media (min-width: @tablet-width) {
+  .example__block {
+    position: relative;
+    margin-bottom: 116px;
+  }
+}
+
 .example__expences {
   color: #000000;
   text-align: center;
@@ -101,6 +134,21 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 0;
+    text-align: right;
+  }
 }
 
 // Desktop
