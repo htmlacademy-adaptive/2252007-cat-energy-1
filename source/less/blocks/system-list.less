@@ -6,6 +6,13 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .system-list__item {
@@ -17,6 +24,15 @@
   @media (min-width: @tablet-width) {
     padding: 77px 63px 57px 52px;
     margin-bottom: 30px;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    width: 457px;
+    padding: 47px 61px 59px 52px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
   }
 }
 

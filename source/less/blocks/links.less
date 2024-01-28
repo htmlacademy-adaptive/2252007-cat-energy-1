@@ -3,19 +3,23 @@
   margin: 0 auto;
   padding-bottom: 40px;
 
+  // Tablet
   @media (min-width: @tablet-width) {
     padding-bottom: 55px;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    padding-bottom: 66px;
   }
 }
 
 .links__wrapper {
   margin: 0 auto;
-  // height: 160px;
   width: 280px;
   display: flex;
   flex-direction: column;
   margin-top: 40px;
-  // margin-bottom: 40px;
 
   // Tablet
   @media (min-width: @tablet-width) {
@@ -24,6 +28,13 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 55px;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    padding: 0;
+    margin-top: 66px;
   }
 }
 
@@ -38,6 +49,8 @@
   // Tablet
   @media (min-width: @tablet-width) {
     margin: 0;
+    display: flex;
+    align-content: center;
   }
 }
 

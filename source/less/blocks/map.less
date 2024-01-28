@@ -5,22 +5,30 @@
 
 .map__wrapper--index {
   margin: 0 auto;
-  // width: 320px;
-  // height: 362px;
-
   background-image: url("../img/map-mobile.png");
   width: 320px;
   height: 362px;
   object-fit: contain;
+  background-repeat: no-repeat;
 
   // Tablet
   @media (min-width: @tablet-width) {
-    // width: 768px;
-    // height: 400px;
-
+    margin: 0 auto;
     background-image: url("../img/map-tablet.png");
     width: 768px;
     height: 400px;
+    background-repeat: no-repeat;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    // position: relative;
+    background-image: url("../img/map-desktop.png");
+    width: 100%;
+    width: 1440px;
+    height: 400px;
+    background-repeat: no-repeat;
   }
 }
 
