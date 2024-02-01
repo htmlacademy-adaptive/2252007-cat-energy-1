@@ -8,19 +8,15 @@
 
   // Tablet
   @media (min-width: @tablet-width) {
-    margin: 0;
-    padding: 0;
-    list-style: none;
     display: grid;
-    grid-template-columns: 324px 324px;
+    grid-template-columns: 1fr 1fr;
+    // grid-template-columns: 324px 324px;
     gap: 59px;
   }
 
   // Desktop
   @media (min-width: @desktop-width) {
     width: 1220px;
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

@@ -9,6 +9,20 @@
   margin-bottom: 46px;
   display: flex;
   flex-direction: column;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    margin-bottom: 72px;
+  }
+  // Desktop
+  @media (min-width: @desktop-width) {
+    width: 570px;
+    margin: 0;
+    margin-right: 80px;
+    margin-bottom: 70px;
+    position: relative;
+  }
 }
 
 .data__row {

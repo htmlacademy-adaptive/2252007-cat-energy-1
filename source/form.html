@@ -8,10 +8,10 @@
   </head>
   <body class="page__body">
     <!-- Header -->
-    <header class="main-header">
+    <header class="main-header container">
       <div class="main-header__wrapper">
         <div class="main-header__logo-image">
-          <a class="main-header__logo-image--link" href="#">
+          <a class="main-header__logo-image--link" href="index.html">
             <img
               class="main-header__logo-image--img"
               src="img/logo-mobile.jpg"
@@ -29,7 +29,7 @@
           </a>
         </div>
         <div class="main-header__logo-name">
-          <a class="main-header__logo-name--link" href="#">
+          <a class="main-header__logo-name--link" href="index.html">
             <span class="main-header__logo-name--name logo-name">
               <!-- <svg
                 class="logo-name__svg logo-name__top"
@@ -134,23 +134,26 @@
           </a>
         </div>
 
-        <nav class="main-header__main-nav main-nav">
+        <!-- Nav -->
+        <nav class="main-header__main-nav main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <!-- <div class="main-nav__block visually-hidden">
-            <ul class="main-nav__list nav-list visually-hidden">
+          <div class="main-nav__wrapper main-nav__wrapper--closed">
+            <ul class="main-nav__list nav-list">
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="index.html">Главная</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="catalog.html"
+                  >Каталог продукции</a
+                >
+              </li>
               <li class="nav-list__item nav-list__item--current">
-                <a href="#">Главная</a>
-              </li>
-              <li class="nav-list__item">
-                <a href="catalog.html">Каталог продукции</a>
-              </li>
-              <li class="nav-list__item">
-                <a href="form.html">Подбор программы</a>
+                <a class="nav-list__link" href="#">Подбор программы</a>
               </li>
             </ul>
-          </div> -->
+          </div>
         </nav>
       </div>
     </header>
@@ -158,7 +161,11 @@
     <!-- Main -->
     <main class="main-container">
       <!-- Form -->
-      <form class="form" action="https://echo.htmlacademy.ru/" method="get">
+      <form
+        class="form container"
+        action="https://echo.htmlacademy.ru/"
+        method="get"
+      >
         <!-- Header -->
         <div class="form__field header">
           <div class="header__wrapper">
@@ -398,7 +405,9 @@
     <!-- Footer -->
     <footer class="main-footer">
       <!-- Cooperation -->
-      <section class="main-footer__cooperation cooperation cooperation--form">
+      <section
+        class="main-footer__cooperation cooperation cooperation--index cooperation--form"
+      >
         <h2 class="visually-hidden">Приглашаем к сотрудничеству</h2>
         <div class="cooperation__wrapper">
           <h3 class="cooperation__title">
@@ -414,21 +423,21 @@
       <!-- Map -->
       <section class="main-footer__map map">
         <h2 class="visually-hidden">Мы на карте</h2>
-        <div class="map__wrapper map__wrapper--form">
-          <img
+        <div class="map__wrapper map__wrapper--index container">
+          <!-- <img
             class="map__mobile"
             src="img/map-mobile.png"
             width="320"
             height="362"
             alt="Наш магазин на карте."
-          />
+          /> -->
         </div>
       </section>
 
       <!-- Logo Social -->
       <section class="main-footer__links links">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
-        <div class="links__wrapper">
+        <div class="links__wrapper container">
           <div class="links__logo">
             <a class="links__logo-link" href="#">
               <span class="links__logo-name logo-name">

@@ -1,20 +1,16 @@
 // Mobile
 .program {
   margin: 0 auto;
+  width: 100%;
   height: 480px;
   margin-bottom: 20px;
   background-image: linear-gradient(
-      to bottom,
-      rgba(104, 183, 56, 0.85) 0,
-      rgba(104, 183, 56, 0.85) 302px,
-      #ffffff 302px,
-      #ffffff 100%
-    ),
-    url("../img/background-desktop.png");
-  background-repeat: no-repeat;
-  background-size: 320px 302px;
-  background-position: center top;
-  object-fit: cover;
+    to bottom,
+    rgba(104, 183, 56, 0.85) 0,
+    rgba(104, 183, 56, 0.85) 302px,
+    #ffffff 302px,
+    #ffffff 100%
+  );
 
   // Tablet
   @media (min-width: @tablet-width) {
@@ -35,16 +31,20 @@
   flex-direction: column;
   position: relative;
 
+  background-image: url("../img/background-desktop.png");
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
+  background-position: center top;
+
   // Tablet
   @media (min-width: @tablet-width) {
     width: 709px;
-    margin: 0 auto;
+    background-image: none;
   }
 
   // Desktop
   @media (min-width: @desktop-width) {
     width: 1220px;
-    margin: 0 auto;
   }
 }
 
@@ -133,11 +133,7 @@
 
 // Button
 .program__block-button {
-  position: absolute;
-  // bottom: 0;
-  left: 0;
-  width: 192px;
-  height: 20px;
+  display: block;
   padding: 10px 44px;
 
   color: #ffffff;
@@ -150,16 +146,12 @@
   background-color: #68b738;
   border: none;
   text-decoration: none;
-  // margin-top: 3px;
-  // margin-top: 138px;
 
   // Tablet
   @media (min-width: @tablet-width) {
     display: block;
-    position: absolute;
     bottom: -50px;
     width: 192px;
-    height: 26px;
     padding: 14px 26px;
 
     color: #ffffff;
@@ -181,128 +173,35 @@
   }
 }
 
-.program__image-link {
+.program__image {
   position: absolute;
   width: 280px;
   height: 270px;
   top: 167px;
-  left: 0;
+  z-index: 2;
+  left: 50%;
+  transform: translate(-50%);
 
-  background-image: url("../img/main-image-mobile.png");
+  //
 
   // Tablet
   @media (min-width: @tablet-width) {
-    background-image: url("../img/main-image-tablet.png");
     display: inline-block;
     position: absolute;
     width: 709px;
     height: 609px;
     top: 201px;
-    left: 0;
-    z-index: -1;
+    right: 10px;
+    z-index: -2;
   }
 
   // Desktop
   @media (min-width: @desktop-width) {
-    background-image: url("../img/main-image-desktop.png");
-    background-repeat: no-repeat;
     display: inline-block;
     position: absolute;
     width: 552px;
     height: 499px;
     top: -81px;
-    left: 447px;
-    z-index: -1;
+    // z-index: -1;
   }
 }
-
-// // Desktop
-// .program {
-//   // width: 1220px;
-//   // margin: 0 auto;
-//   // position: relative;
-//   // margin-bottom: 82px;
-//   /* background-image: url("../images/background-desktop.png");
-//   background-repeat: no-repeat;
-//   background-size: 720px 694px;
-//   background-position: 700px -20px;
-//   background-color: rgba(104, 183, 56, 0.85);
-//   background-origin: content-box; */
-
-//   /* background-size: 720px 694px;
-//   background: rgba(104, 183, 56, 0.85) url("../images/background-desktop.png")
-//     no-repeat right;
-//   box-shadow: 0 0 0 10px rgba(104, 183, 56, 0.85); */
-// }
-
-// .program__wrapper {
-//    position: absolute;
-//   background-size: 720px 694px;
-//   background: rgba(104, 183, 56, 0.85) url("../images/background-desktop.png")
-//     no-repeat;
-// }
-
-// .program-block {
-//   width: 919px;
-//   margin-top: 0;
-//   margin-left: 92px;
-//   display: flex;
-//   flex-direction: column;
-//   /* position: relative; */
-// }
-
-// .program-block__button:hover {
-//   background-color: #5eaa2f;
-// }
-
-// .program-block__button:active {
-//   color: rgba(255, 255, 255, 0.3);
-// }
-
-// /* Program image */
-// .program__image {
-//   position: absolute;
-//   top: 40px;
-//   right: 218px;
-// }
-
-// .program__block-title {
-//   width: 416px;
-//   margin-top: 224px;
-//   margin-bottom: 40px;
-//   color: #000000;
-//   font-family: "Oswald", "Arial", sans-serif;
-//   font-size: 60px;
-//   font-weight: 400;
-//   line-height: 60px;
-// }
-
-// .program__block-text {
-//   color: #000000;
-//   font-family: "Oswald", "Arial", sans-serif;
-//   font-size: 20px;
-//   font-weight: 400;
-//   line-height: 20px;
-//   text-transform: uppercase;
-//   margin-bottom: 52px;
-// }
-
-// // Button
-// .program__block-button {
-//   width: 192px;
-//   height: 26px;
-//   padding: 14px 26px;
-
-//   color: #ffffff;
-//   text-align: center;
-//   font-family: "Oswald", sans-serif;
-//   font-size: 20px;
-//   font-weight: 400;
-//   line-height: 26px;
-//   text-transform: uppercase;
-//   background-color: #68b738;
-//   border: none;
-//   // cursor: pointer;
-//   margin-bottom: 132px;
-//   text-decoration: none;
-// }

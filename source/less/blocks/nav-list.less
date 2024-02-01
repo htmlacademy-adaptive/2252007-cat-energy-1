@@ -45,3 +45,16 @@
   // margin-top: 25px;
   // margin-bottom: 65px;
 }
+
+.nav-list__item {
+  position: relative;
+}
+
+.nav-list__item--current::after {
+  content: "";
+  position: absolute;
+  outline: 2px solid #68b738;
+  width: 100%;
+  left: 0;
+  bottom: -8px;
+}

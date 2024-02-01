@@ -4,36 +4,32 @@
 }
 
 .map__wrapper--index {
-  margin: 0 auto;
   background-image: url("../img/map-mobile.png");
-  width: 320px;
-  height: 362px;
-  object-fit: contain;
+  background-position: center;
   background-repeat: no-repeat;
+  height: 362px;
+  background-size: 320px 362px;
+  // width: 320px;
+  // margin: 0 auto;
 
   // Tablet
   @media (min-width: @tablet-width) {
-    margin: 0 auto;
     background-image: url("../img/map-tablet.png");
-    width: 768px;
+    background-size: 768px 400px;
     height: 400px;
-    background-repeat: no-repeat;
+    // width: 768px;
   }
 
   // Desktop
   @media (min-width: @desktop-width) {
-    margin: 0 auto;
-    // position: relative;
     background-image: url("../img/map-desktop.png");
-    width: 100%;
+    background-size: 1440px 400px;
     // width: 1440px;
-    height: 400px;
-    background-repeat: no-repeat;
   }
 }
 
-.map__wrapper--form {
-  margin: 0 auto;
-  width: 320px;
-  height: 362px;
-}
+// .map__wrapper--form {
+//   margin: 0 auto;
+//   width: 320px;
+//   height: 362px;
+// }

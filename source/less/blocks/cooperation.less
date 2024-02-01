@@ -7,6 +7,7 @@
 .cooperation--index {
   background-color: #ffffff;
   position: relative;
+  max-width: 1220px;
 }
 
 .cooperation--form {
@@ -15,6 +16,7 @@
 
 .cooperation--catalog {
   background-color: #f2f2f2;
+  position: relative;
 }
 
 .cooperation__wrapper {
@@ -28,15 +30,18 @@
   // Tablet
   @media (min-width: @tablet-width) {
     width: 709px;
+    padding: 0;
   }
 
   // Desktop
   @media (min-width: @desktop-width) {
     background-color: #ffffff;
-    width: 565px;
+    width: 411px;
+    // height: 199px;
     padding: 60px 78px 60px 80px;
     position: absolute;
     left: 110px;
+    // left: calc(50% -610px);
     top: 95px;
     z-index: 2;
   }
@@ -44,7 +49,7 @@
 
 .cooperation__title {
   margin: 0;
-  width: 140px;
+  // width: 157px;
   color: #111111;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -52,22 +57,36 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  max-width: 165px;
 
   // Tablet
   @media (min-width: @tablet-width) {
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
+    margin-top: 61px;
+    margin-bottom: 61px;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    margin: 0;
   }
 }
 
 .cooperation__address {
-  width: 140px;
+  width: 157px;
   margin: 0;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
 
   // Desktop
   @media (min-width: @desktop-width) {
-    width: 157px;
+    margin: 0;
   }
 }
 
@@ -85,6 +104,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
+    text-align: right;
   }
 }
 
