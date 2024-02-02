@@ -7,11 +7,19 @@
   content: "";
   position: absolute;
   background-color: #68b738;
+
   height: 2px;
-  width: 100%;
+  width: 2000px;
   top: 15px;
-  left: 0;
+  // left: 0;
+  left: -220px;
   z-index: 1;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    content: "";
+    top: 21px;
+  }
 }
 
 .comment__wrapper {
@@ -45,9 +53,6 @@
   display: inline-block;
   padding: 0 20px;
   background-color: #ffffff;
-  // margin: 0 -20px;
-  // margin-top: 0px;
-  // margin-bottom: 38px;
   margin: 0 -20px 38px -20px;
 
   // Tablet
