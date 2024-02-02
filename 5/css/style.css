@@ -56,8 +56,8 @@ img {
 }
 @media (min-width: 1220px) {
   .container {
-    width: 1220px;
     padding: 0 110px;
+    width: 1440px;
   }
 }
 .additional {
@@ -126,7 +126,7 @@ img {
   display: inline-block;
   padding: 0 20px;
   background-color: #ffffff;
-  margin: 25px -20px 36px -20px;
+  margin: 25px -20px 36px 0;
 }
 @media (min-width: 768px) {
   .additional__title {
@@ -251,7 +251,6 @@ img {
   }
 }
 .additional__numbers {
-  width: 362px;
   display: flex;
   margin-bottom: 15px;
 }
@@ -639,10 +638,16 @@ img {
   position: absolute;
   background-color: #68b738;
   height: 2px;
-  width: 100%;
+  width: 2000px;
   top: 15px;
-  left: 0;
+  left: -220px;
   z-index: 1;
+}
+@media (min-width: 768px) {
+  .checkbox::before {
+    content: "";
+    top: 21px;
+  }
 }
 .checkbox__wrapper {
   width: 280px;
@@ -754,10 +759,16 @@ img {
   position: absolute;
   background-color: #68b738;
   height: 2px;
-  width: 100%;
+  width: 2000px;
   top: 15px;
-  left: 0;
+  left: -220px;
   z-index: 1;
+}
+@media (min-width: 768px) {
+  .comment::before {
+    content: "";
+    top: 21px;
+  }
 }
 .comment__wrapper {
   width: 280px;
@@ -820,6 +831,7 @@ img {
   text-transform: uppercase;
 }
 .contacts {
+  width: 100%;
   position: relative;
 }
 .contacts__wrapper {
@@ -844,16 +856,15 @@ img {
   position: absolute;
   background-color: #68b738;
   height: 2px;
-  width: 100%;
+  width: 2000px;
   top: 15px;
-  left: 0;
+  left: -220px;
   z-index: 1;
 }
 @media (min-width: 768px) {
   .contacts::before {
     content: "";
     top: 21px;
-    left: 0;
   }
 }
 .contacts__title {
@@ -865,9 +876,9 @@ img {
   position: relative;
   z-index: 2;
   display: inline-block;
-  padding: 0 20px;
   background-color: #ffffff;
-  margin: 0 74px 35px -20px;
+  padding: 0 20px;
+  margin: 0 75px 38px -20px;
 }
 @media (min-width: 768px) {
   .contacts__title {
@@ -1124,11 +1135,6 @@ img {
   margin-bottom: 0;
   background-color: #eaeaea;
 }
-@media (min-width: 1220px) {
-  .example {
-    background-image: linear-gradient(to bottom, #ffffff 0, #ffffff 135px, #f2f2f2 135px, #f2f2f2 100%);
-  }
-}
 .example__wrapper {
   width: 280px;
   margin: 0 auto;
@@ -1142,6 +1148,7 @@ img {
   .example__wrapper {
     width: 1220px;
     position: relative;
+    background-image: linear-gradient(to bottom, #ffffff 0, #ffffff 135px, #f2f2f2 135px, #f2f2f2 100%);
   }
 }
 .example__title {
@@ -1398,23 +1405,14 @@ img {
   width: 100%;
 }
 .form {
-  margin: 0 auto;
   margin-bottom: 60px;
 }
 @media (min-width: 768px) {
-  .form {
-    width: 668px;
-  }
 }
 @media (min-width: 1220px) {
   .form {
-    width: 1220px;
     margin-bottom: 79px;
   }
-}
-.form__field {
-  width: 100%;
-  margin: 0 auto;
 }
 .form__button-wrapper {
   width: 280px;
@@ -1492,10 +1490,10 @@ img {
   content: "";
   position: absolute;
   background-color: #d9d9d9;
-  width: 100%;
+  width: 2000px;
   height: 1px;
   top: 0;
-  left: 0;
+  left: -220px;
 }
 @media (min-width: 768px) {
   .header::before {
@@ -1510,7 +1508,7 @@ img {
 }
 @media (min-width: 768px) {
   .header__wrapper {
-    width: 709px;
+    width: 628px;
     margin: 0 auto;
     padding-top: 0;
     margin-bottom: 66px;
@@ -1738,6 +1736,7 @@ img {
   background-repeat: no-repeat;
   height: 362px;
   background-size: 320px 362px;
+  margin: 0 auto;
 }
 @media (min-width: 768px) {
   .map__wrapper--index {
@@ -1980,9 +1979,9 @@ img {
   position: absolute;
   background-color: #d9d9d9;
   height: 1px;
-  width: 100%;
+  width: 2000px;
   top: -20px;
-  left: 0;
+  left: -220px;
 }
 @media (min-width: 768px) {
   .radio::before {
@@ -2000,10 +1999,10 @@ img {
   content: "";
   position: absolute;
   background-color: #d9d9d9;
-  width: 100%;
+  width: 2000px;
   height: 1px;
   bottom: -19px;
-  left: 0;
+  left: -220px;
 }
 @media (min-width: 768px) {
   .radio::after {
@@ -2024,7 +2023,7 @@ img {
 }
 @media (min-width: 768px) {
   .radio__wrapper {
-    padding: 23px 380px 27px 27px;
+    padding: 23px 310px 27px 27px;
     margin-bottom: 65px;
   }
 }
@@ -2107,7 +2106,7 @@ img {
   .slider {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 110px;
     width: 560px;
     height: 512px;
     padding: 0;
