@@ -8,12 +8,12 @@
   </head>
   <body class="page__body">
     <!-- Header -->
-    <header class="main-header">
+    <header class="main-header container">
       <div class="main-header__wrapper">
         <div class="main-header__logo-image">
-          <a class="main-header__logo-image--link" href="#">
+          <a class="main-header__logo-image--link" href="index.html">
             <img
-              class="main-header__logo-image"
+              class="main-header__logo-image--img"
               src="img/logo-mobile.jpg"
               width="33"
               height="38"
@@ -29,7 +29,7 @@
           </a>
         </div>
         <div class="main-header__logo-name">
-          <a class="main-header__logo-name--link" href="#">
+          <a class="main-header__logo-name--link" href="index.html">
             <span class="main-header__logo-name--name logo-name">
               <!-- <svg
                 class="logo-name__svg logo-name__top"
@@ -134,23 +134,26 @@
           </a>
         </div>
 
-        <nav class="main-header__main-nav main-nav">
+        <!-- Nav -->
+        <nav class="main-header__main-nav main-nav main-nav--closed">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <!-- <div class="main-nav__block visually-hidden">
-            <ul class="main-nav__list nav-list visually-hidden">
+          <div class="main-nav__wrapper main-nav__wrapper--closed">
+            <ul class="main-nav__list nav-list">
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="index.html">Главная</a>
+              </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="catalog.html"
+                  >Каталог продукции</a
+                >
+              </li>
               <li class="nav-list__item nav-list__item--current">
-                <a href="#">Главная</a>
-              </li>
-              <li class="nav-list__item">
-                <a href="catalog.html">Каталог продукции</a>
-              </li>
-              <li class="nav-list__item">
-                <a href="form.html">Подбор программы</a>
+                <a class="nav-list__link" href="#">Подбор программы</a>
               </li>
             </ul>
-          </div> -->
+          </div>
         </nav>
       </div>
     </header>
@@ -160,116 +163,130 @@
       <!-- Form -->
       <form class="form" action="https://echo.htmlacademy.ru/" method="get">
         <!-- Header -->
-        <div class="form__field header">
-          <div class="header__wrapper">
-            <h1 class="header__title">Подбор программы</h1>
-            <h2 class="header__text">
+        <div class="form__field form__field--header">
+          <div class="form__wrapper form__wrapper--header container">
+            <h1 class="form__title-main">Подбор программы</h1>
+            <h2 class="form__text">
               Заполните анкету, и мы подберем программу питания для вашего кота
             </h2>
           </div>
         </div>
 
-        <!-- Data -->
-        <div class="form__field data">
-          <div class="data__wrapper">
-            <div class="data__field-row">
-              <div class="data__row">
-                <label class="data__label" for="cat-name">имя:*</label>
-                <input
-                  class="data__control"
-                  type="text"
-                  size="55"
-                  placeholder="Барсик"
-                  name="cat-name"
-                  id="cat-name"
-                  required
-                />
-              </div>
+        <!-- Block Cat -->
 
-              <div class="data__row">
-                <label class="data__label" for="cat-age">Вес (кг):*</label>
-                <input
-                  class="data__control"
-                  type="number"
-                  placeholder="7"
-                  name="cat-age"
-                  id="cat-age"
-                  required
-                />
-              </div>
+        <div class="form__block">
+          <!-- Data -->
+          <!-- <div class="form__field form__field--data"> -->
+          <div class="container container--block">
+            <div class="form__wrapper form__wrapper--data">
+              <div class="form__field-row">
+                <div class="form__row">
+                  <label class="form__label form__label--data" for="cat-name"
+                    >имя:*</label
+                  >
+                  <input
+                    class="form__control form__control--data"
+                    type="text"
+                    size="55"
+                    placeholder="Барсик"
+                    name="cat-name"
+                    id="cat-name"
+                    required
+                  />
+                </div>
 
-              <div class="data__row">
-                <label class="data__label" for="cat-weight"
-                  >Возраст (лет):</label
-                >
-                <input
-                  class="data__control"
-                  type="number"
-                  placeholder="7"
-                  name="cat-weight"
-                  id="cat-weight"
-                />
+                <div class="form__row">
+                  <label class="form__label form__label--data" for="cat-age"
+                    >Вес (кг):*</label
+                  >
+                  <input
+                    class="form__control form__control--data"
+                    type="number"
+                    placeholder="7"
+                    name="cat-age"
+                    id="cat-age"
+                    required
+                  />
+                </div>
+
+                <div class="form__row">
+                  <label class="form__label form__label--data" for="cat-weight"
+                    >Возраст (лет):</label
+                  >
+                  <input
+                    class="form__control form__control--data"
+                    type="number"
+                    placeholder="7"
+                    name="cat-weight"
+                    id="cat-weight"
+                  />
+                </div>
               </div>
+            </div>
+          </div>
+
+          <!-- Radio -->
+          <!-- <div class="form__field form__field--radio"> -->
+          <div class="container container--block">
+            <div class="form__wrapper form__wrapper--radio">
+              <ul class="form__list form__list--radio">
+                <li class="form__item form__item--checked">
+                  <label class="form__label form__label--radio">
+                    <input
+                      class="form__control form__control--radio visually-hidden"
+                      name="radio"
+                      value="похудение"
+                      type="radio"
+                      checked
+                    />
+                    <span class="form__control-mark"></span>
+                    <span class="form__control-label">похудение</span>
+                  </label>
+                </li>
+                <li class="form__item">
+                  <label class="form__label form__label--radio">
+                    <input
+                      class="form__control form__control--radio visually-hidden"
+                      name="radio"
+                      value="Набор массы"
+                      type="radio"
+                    />
+                    <span class="form__control-mark"></span>
+                    <span class="form__control-label">Набор массы</span>
+                  </label>
+                </li>
+                <li class="form__item form__item-last">
+                  <label class="form__label form__label--radio">
+                    <input
+                      class="form__control form__control--radio visually-hidden"
+                      name="radio"
+                      value="Не знаю (Нужен ваш совет)"
+                      type="radio"
+                    />
+                    <span class="form__control-mark"></span>
+                    <span class="form__control-label"
+                      >Не знаю (Нужен ваш совет)</span
+                    >
+                  </label>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
 
-        <!-- Radio -->
-        <div class="form__field radio">
-          <div class="radio__wrapper">
-            <ul class="radio__list">
-              <li class="radio__item radio__item--checked">
-                <label class="radio__label">
-                  <input
-                    class="radio__control visually-hidden"
-                    name="radio"
-                    value="похудение"
-                    type="radio"
-                    checked
-                  />
-                  <span class="radio__control-mark"></span>
-                  <span class="radio__control-label">похудение</span>
-                </label>
-              </li>
-              <li class="radio__item">
-                <label class="radio__label">
-                  <input
-                    class="radio__control visually-hidden"
-                    name="radio"
-                    value="Набор массы"
-                    type="radio"
-                  />
-                  <span class="radio__control-mark"></span>
-                  <span class="radio__control-label">Набор массы</span>
-                </label>
-              </li>
-              <li class="radio__item radio__item-last">
-                <label class="radio__label">
-                  <input
-                    class="radio__control visually-hidden"
-                    name="radio"
-                    value="Не знаю (Нужен ваш совет)"
-                    type="radio"
-                  />
-                  <span class="radio__control-mark"></span>
-                  <span class="radio__control-label"
-                    >Не знаю (Нужен ваш совет)</span
-                  >
-                </label>
-              </li>
-            </ul>
-          </div>
-        </div>
-
         <!-- Contacts -->
-        <div class="form__field contacts">
-          <div class="contacts__wrapper">
-            <h3 class="contacts__title">Контактные данные (владельца кота)</h3>
-            <div class="contacts__field">
-              <div class="contacts__row">
-                <label class="contacts__label" for="email">E-mail:*</label>
+        <div class="form__field form__field--contacts">
+          <div class="form__wrapper form__wrapper--contacts container">
+            <h3 class="form__title form__title--contacts">
+              Контактные данные (владельца кота)
+            </h3>
+            <div class="form__box form__box--contacts">
+              <div class="form__row form__row--contacts">
+                <label class="form__label form__label--contacts" for="email"
+                  >E-mail:*</label
+                >
                 <input
-                  class="contacts__control contacts__control--email"
+                  class="form__control form__control--contacts form__control--email"
                   type="email"
                   placeholder="кuklachev@gmail.com"
                   name="email"
@@ -277,10 +294,12 @@
                   required
                 />
               </div>
-              <div class="contacts__row">
-                <label class="contacts__label" for="phone">Телефон:*</label>
+              <div class="form__row form__row--contacts">
+                <label class="form__label form__label--contacts" for="phone"
+                  >Телефон:*</label
+                >
                 <input
-                  class="contacts__control contacts__control--phone"
+                  class="form__control form__control--contacts form__control--phone"
                   type="tel"
                   placeholder="8 (960) 900-60-90"
                   name="phone"
@@ -293,14 +312,14 @@
         </div>
 
         <!-- Comment -->
-        <div class="form__field comment">
-          <div class="comment__wrapper">
-            <h3 class="comment__title">Комментарий</h3>
+        <div class="form__field form__field--comment">
+          <div class="form__wrapper form__wrapper--comment container">
+            <h3 class="form__title form__title--comment">Комментарий</h3>
             <label class="visually-hidden" for="comment"
               >О питомце в свободной форме</label
             >
             <textarea
-              class="comment__control--textarea"
+              class="form__control form__control--textarea"
               placeholder="Расскажите обо всех повадках кота"
               name="comment"
               id="comment"
@@ -311,70 +330,81 @@
         </div>
 
         <!-- Checkbox -->
-        <div class="form__field checkbox">
-          <div class="checkbox__wrapper">
-            <h3 class="checkbox__title">Дополнительно</h3>
-            <ul class="checkbox__list">
-              <li class="checkbox__item checkbox__item--checked">
-                <label class="checkbox__label" for="sweetener">
+        <div class="form__field form__field--checkbox">
+          <div class="form__wrapper form__wrapper--checkbox container">
+            <h3 class="form__title form__title--checkbox">Дополнительно</h3>
+            <ul class="form__list form__list--checkbox">
+              <li class="form__list-item form__list-item--checked">
+                <label
+                  class="form__label form__label--checkbox"
+                  for="sweetener"
+                >
                   <input
-                    class="visually-hidden checkbox__control"
+                    class="form__control form__control--checkbox visually-hidden"
                     name="sweetener"
                     type="checkbox"
                     id="sweetener"
                     checked
                   />
-                  <span class="checkbox__control-mark"></span>
                   <span
-                    class="checkbox__control-label checkbox__control-label--checkbox"
+                    class="form__control-mark form__control-mark--checkbox"
+                  ></span>
+                  <span
+                    class="form__control-label form__control-label--checkbox"
                     >сахарозаменитель</span
                   >
                 </label>
               </li>
 
-              <li class="checkbox__item">
-                <label class="checkbox__label" for="water">
+              <li class="form__list-item">
+                <label class="form__label form__label--checkbox" for="water">
                   <input
-                    class="visually-hidden checkbox__control"
+                    class="form__control form__control--checkbox visually-hidden"
                     name="water"
                     type="checkbox"
                     id="water"
                   />
-                  <span class="checkbox__control-mark"></span>
                   <span
-                    class="checkbox__control-label checkbox__control-label--checkbox"
+                    class="form__control-mark form__control-mark--checkbox"
+                  ></span>
+                  <span
+                    class="form__control-label form__control-label--checkbox"
                     >питьевая вода</span
                   >
                 </label>
               </li>
 
-              <li class="checkbox__item">
-                <label class="checkbox__label" for="milk">
+              <li class="form__list-item">
+                <label class="form__label form__label--checkbox" for="milk">
                   <input
-                    class="visually-hidden checkbox__control"
+                    class="form__control form__control--checkbox visually-hidden"
                     name="milk"
                     type="checkbox"
                     id="milk"
                   />
-                  <span class="checkbox__control-mark"></span>
                   <span
-                    class="checkbox__control-label checkbox__control-label--checkbox"
+                    class="form__control-mark form__control-mark--checkbox"
+                  ></span>
+                  <span
+                    class="form__control-label form__control-label--checkbox"
                     >молоко</span
                   >
                 </label>
               </li>
 
-              <li class="checkbox__item">
-                <label class="checkbox__label" for="vitamins">
+              <li class="form__list-item">
+                <label class="form__label form__label--checkbox" for="vitamins">
                   <input
-                    class="visually-hidden checkbox__control"
+                    class="form__control form__control--checkbox visually-hidden"
                     name="vitamins"
                     type="checkbox"
                     id="vitamins"
                   />
-                  <span class="checkbox__control-mark"></span>
                   <span
-                    class="checkbox__control-label checkbox__control-label--checkbox"
+                    class="form__control-mark form__control-mark--checkbox"
+                  ></span>
+                  <span
+                    class="form__control-label form__control-label--checkbox"
                     >витамины</span
                   >
                 </label>
@@ -384,8 +414,8 @@
         </div>
 
         <!-- Button -->
-        <div class="form__field form__button">
-          <div class="form__button-wrapper">
+        <div class="form__field form__field--button form__button">
+          <div class="form__wrapper form__wrapper--button container">
             <button class="form__button-submit" type="submit">
               отправить заявку
             </button>
@@ -398,7 +428,9 @@
     <!-- Footer -->
     <footer class="main-footer">
       <!-- Cooperation -->
-      <section class="main-footer__cooperation cooperation cooperation--form">
+      <section
+        class="main-footer__cooperation cooperation cooperation--index cooperation--form"
+      >
         <h2 class="visually-hidden">Приглашаем к сотрудничеству</h2>
         <div class="cooperation__wrapper">
           <h3 class="cooperation__title">
@@ -414,21 +446,21 @@
       <!-- Map -->
       <section class="main-footer__map map">
         <h2 class="visually-hidden">Мы на карте</h2>
-        <div class="map__wrapper map__wrapper--form">
-          <img
+        <div class="map__wrapper map__wrapper--index container">
+          <!-- <img
             class="map__mobile"
             src="img/map-mobile.png"
             width="320"
             height="362"
             alt="Наш магазин на карте."
-          />
+          /> -->
         </div>
       </section>
 
       <!-- Logo Social -->
       <section class="main-footer__links links">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
-        <div class="links__wrapper">
+        <div class="links__wrapper container">
           <div class="links__logo">
             <a class="links__logo-link" href="#">
               <span class="links__logo-name logo-name">

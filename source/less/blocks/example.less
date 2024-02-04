@@ -3,11 +3,33 @@
   margin: 0 auto;
   margin-bottom: 0;
   background-color: #eaeaea;
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    background-image: linear-gradient(
+      to bottom,
+      #ffffff 0,
+      #ffffff 135px,
+      @lightgray 135px,
+      @lightgray 100%
+    );
+  }
 }
 
 .example__wrapper {
-  width: 280px;
-  margin: 0 auto;
+  // width: 280px;
+  // margin: 0 auto;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    // width: 709px;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    // width: 1220px;
+    position: relative;
+  }
 }
 
 .example__title {
@@ -18,8 +40,44 @@
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
+
   padding-top: 25px;
   margin-bottom: 40px;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+
+    padding-top: 45px;
+    margin-bottom: 60px;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    padding-top: 0;
+    margin: 0;
+    margin-bottom: 76px;
+  }
+}
+
+.example__block {
+  // Tablet
+  @media (min-width: @tablet-width) {
+    position: relative;
+    margin-bottom: 116px;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    width: 436px;
+    display: flex;
+    flex-direction: column;
+    padding: 70px 784px 75px 0;
+    position: relative;
+    margin-bottom: 0;
+  }
 }
 
 .example__description {
@@ -31,6 +89,20 @@
   line-height: 18px;
   margin: 0;
   margin-bottom: 20px;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+
+    margin-bottom: 55px;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    margin-bottom: 69px;
+  }
 }
 
 .example__statistics {
@@ -38,6 +110,14 @@
   width: 280px;
   justify-content: space-between;
   margin-bottom: 34px;
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: 366px;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
 }
 
 .example__item {
@@ -46,6 +126,15 @@
   border: #cdcdcd solid 1px;
   border-radius: 5px;
   position: relative;
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    width: 160px;
+    height: 77px;
+    border: #cdcdcd solid 1px;
+    border-radius: 5px;
+    position: relative;
+  }
 }
 
 .example__numbers {
@@ -59,10 +148,26 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 15px;
+    left: 57px;
+
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 37px;
+  }
 }
 
 .example__numbers--days {
   left: 21px;
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    left: 31px;
+  }
 }
 
 .example__text {
@@ -81,10 +186,30 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-top: 13px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+
+    position: absolute;
+    bottom: -5px;
+    left: 30px;
+    background-color: #f2f2f2;
+    padding: 0 10px;
+  }
 }
 
 .example__text--weight {
   left: 24px;
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    left: 38px;
+  }
 }
 
 .example__expences {
@@ -101,116 +226,33 @@
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 0;
+    text-align: right;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    width: 327px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+
+    position: absolute;
+    left: 0;
+    bottom: 71px;
+  }
 }
-
-// Desktop
-// .example {
-//   margin: 0;
-//   background: linear-gradient(
-//     to bottom,
-//     #ffffff 0,
-//     #ffffff 136px,
-//     #f2f2f2 136px,
-//     #f2f2f2 100%
-//   );
-//   padding-bottom: 75px;
-// }
-
-// .example__wrapper {
-//   width: 1220px;
-//   margin: 0 auto;
-//   position: relative;
-// }
-
-// .example__title {
-//   color: #000000;
-//   text-align: left;
-//   font-family: "Oswald", sans-serif;
-//   font-size: 60px;
-//   font-weight: 400;
-//   line-height: 60px;
-//   margin-bottom: 76px;
-// }
-
-// .example__block {
-//   width: 436px;
-//   display: flex;
-//   flex-direction: column;
-// }
-
-// .example__description {
-//   color: #444444;
-//   font-family: "Lato", sans-serif;
-//   font-size: 16px;
-//   font-weight: 400;
-//   line-height: 24px;
-//   margin-top: 70px;
-//   margin-bottom: 69px;
-// }
-
-// .example__statistics {
-//   display: flex;
-//   width: 366px;
-//   justify-content: space-between;
-//   margin-bottom: 60px;
-// }
-
-// .example__item {
-//   width: 160px;
-//   height: 77px;
-//   border: #cdcdcd solid 1px;
-//   border-radius: 5px;
-//   /* display: flex;
-//   flex-direction: column; */
-//   position: relative;
-// }
-
-// .example__numbers {
-//   position: absolute;
-//   top: 15px;
-//   left: 57px;
-//   color: #000000;
-//   text-align: center;
-//   font-family: "Oswald", sans-serif;
-//   font-size: 30px;
-//   font-weight: 400;
-//   line-height: 37px;
-//   /* margin-bottom: 11px; */
-// }
-
-// .example__numbers--days {
-//   left: 31px;
-// }
-
-// .example__text {
-//   margin: 0;
-//   margin-top: 13px;
-//   color: #444444;
-//   text-align: center;
-//   font-family: "Lato", sans-serif;
-//   font-size: 14px;
-//   font-weight: 400;
-//   line-height: 14px;
-//   position: absolute;
-//   bottom: -5px;
-//   left: 10px;
-//   background-color: #f2f2f2;
-//   padding: 0 10px;
-// }
-
-// .example__text--weight {
-//   left: 20px;
-// }
-
-// .example__expences {
-//   color: #000000;
-//   text-align: center;
-//   font-family: "Oswald", sans-serif;
-//   font-size: 20px;
-//   font-weight: 400;
-//   line-height: 20px;
-//   text-transform: uppercase;
-//   width: 327px;
-//   display: flex;
-//   justify-content: space-between;
-// }

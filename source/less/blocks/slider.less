@@ -3,11 +3,41 @@
   width: 280px;
   position: relative;
   padding-bottom: 40px;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    width: 709px;
+    // position: relative;
+    padding-bottom: 101px;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 110px;
+    width: 560px;
+    height: 512px;
+    padding: 0;
+  }
 }
 
 .slider__list {
   list-style: none;
   padding: 0;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    width: 560px;
+    height: 512px;
+    margin: 0 auto;
+    padding: 0 74px 0 74px;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
 }
 
 .slider__button {

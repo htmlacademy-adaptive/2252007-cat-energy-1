@@ -2,11 +2,32 @@
 .system {
   margin: 0 auto;
   margin-bottom: 20px;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    margin-bottom: 71px;
+  }
 }
 
 .system__wrapper {
   width: 280px;
   margin: 0 auto;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    width: 708px;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
 }
 
 // Desktop
