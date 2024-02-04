@@ -98,7 +98,7 @@
   // Desktop
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
-    width: 995px;
+    width: 895px;
   }
 }
 
@@ -181,7 +181,7 @@
   }
 }
 
-.additional__product {
+.additional__products {
   color: #222222;
   text-align: left;
   font-family: "Oswald", "Arial", sans-serif;
@@ -205,6 +205,8 @@
   // Desktop
   @media (min-width: @desktop-width) {
     position: relative;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -339,13 +341,10 @@
         rgba(104, 183, 56, 0.85) 100%
       ),
       url("../img/gift-desktop.png");
-    position: absolute;
-    bottom: 76px;
-    right: 0;
   }
 }
 
-.additional__gift--text {
+.additional__gift-text {
   width: 161px;
   position: absolute;
   top: 187px;
@@ -375,7 +374,7 @@
   }
 }
 
-.additional__gift--icon-svg {
+.additional__gift-icon-svg {
   position: absolute;
   top: 59px;
   left: 101px;
