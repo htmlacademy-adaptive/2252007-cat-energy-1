@@ -2,7 +2,11 @@
 .cooperation {
   margin: 0 auto;
   background-color: #ffffff;
-  max-width: 1220px;
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    max-width: 1220px;
+  }
 }
 
 .cooperation--index {

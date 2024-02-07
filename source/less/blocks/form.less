@@ -340,6 +340,7 @@
 .form__row {
   margin-bottom: 14px;
   display: flex;
+  position: relative;
 }
 
 .form__row:last-child {
@@ -372,6 +373,48 @@
   padding-bottom: 12px;
   padding-left: 15px;
   width: 100%;
+}
+
+.form__control:hover {
+  border: 1px solid rgba(205, 205, 205, 1);
+  outline: none;
+}
+
+.form__control:focus-visible {
+  border: 2px solid #444444;
+  outline: none;
+}
+
+.form__control:focus-visible + .form__control-svg path {
+  stroke: rgba(104, 183, 56, 1);
+}
+
+// Invalid
+.invalid {
+  border: 2px solid @invalid;
+}
+
+.invalid + .form__control-svg path {
+  border: 2px solid @invalid;
+  stroke: @invalid;
+}
+
+// .form__control--contacts + .invalid {
+//   border: 2px solid @invalid;
+// }
+
+// .invalid + .form__control--contacts {
+//   border: 2px solid @invalid;
+// }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+// For Firefox
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 .form__list--data {
@@ -476,6 +519,16 @@
   border-radius: 50%;
 }
 
+.form__control-mark:hover {
+  border: 1px solid #bababa;
+}
+
+/* Radio Disabled */
+.form__item--disabled,
+.form__item--checked-disabled {
+  opacity: 0.3;
+}
+
 .form__control--radio[type="radio"] + .form__control-mark {
   border-radius: 50%;
 }
@@ -543,16 +596,58 @@
   width: 100%;
 }
 
-.form__control--email {
-  background-image: url("../img/email.svg");
-  background-repeat: no-repeat;
-  background-position: 196px 13px;
+.form__control-svg--email {
+  position: absolute;
+  right: 12px;
+  top: 13px;
+
+  // right: 11px;
+  // top: 12px;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    right: 16px;
+    top: 14px;
+
+    // right: 13px;
+    // top: 15px;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    right: 16px;
+    top: 16px;
+
+    // right: 15px;
+    // top: 15px;
+  }
 }
 
-.form__control--phone {
-  background-image: url("../img/phone.svg");
-  background-repeat: no-repeat;
-  background-position: 167px 13px;
+.form__control-svg--phone {
+  position: absolute;
+  right: 13px;
+  top: 13px;
+
+  // right: 12px;
+  // top: 12px;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    right: 16px;
+    top: 14px;
+
+    // right: 13px;
+    // top: 15px;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    right: 16px;
+    top: 16px;
+
+    // right: 15px;
+    // top: 15px;
+  }
 }
 
 // Comment
@@ -650,10 +745,16 @@
   background-repeat: no-repeat;
   background-position: 7px 7px;
   background-size: 26px;
+  border-radius: 0;
+}
+
+/* Checkbox Disabled */
+.form__list-item--disabled,
+.form__list-item--checked-disabled {
+  opacity: 0.3;
 }
 
 // Button
-
 .form__button-submit {
   display: flex;
   // width: 280px;
@@ -688,6 +789,15 @@
     padding: 14px 208px 14px 208px;
     margin-right: 80px;
   }
+}
+
+.form__button-submit:hover,
+.form__button-submit:active {
+  background: @darkgreen;
+}
+
+.form__button-submit:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .form__button-text {

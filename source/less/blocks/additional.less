@@ -84,6 +84,14 @@
   }
 }
 
+.additional__box {
+  // Desktop
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
 .additional__list {
   margin: 0;
   padding: 0;
@@ -300,6 +308,15 @@
   }
 }
 
+.additional__button:hover,
+.additional__button:active {
+  background: @darkgreen;
+}
+
+.additional__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 // Gift
 .additional__gift {
   width: 280px;
@@ -362,8 +379,9 @@
   // Tablet
   @media (min-width: @tablet-width) {
     top: 71px;
-    left: 415px;
+    left: 421px;
     text-align: left;
+    // text-transform: lowercase;
   }
 
   // Desktop
@@ -384,7 +402,7 @@
   // Tablet
   @media (min-width: @tablet-width) {
     top: 57px;
-    left: 40px;
+    left: 77px;
   }
 
   // Desktop

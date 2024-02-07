@@ -13,6 +13,14 @@
   // Tablet
   @media (min-width: @tablet-width) {
     border-bottom: none;
+    padding: 0;
+    width: 324px;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    width: 245px;
+    margin: 0;
   }
 
   // // Desktop
@@ -25,10 +33,43 @@
   width: 280px;
   margin: 0 auto;
 
+  // Tablet
+  @media (min-width: @tablet-width) {
+    width: 250px;
+    padding: 10px 37px 40px 37px;
+
+    background-image: linear-gradient(
+      to bottom,
+      #ffffff 0,
+      #ffffff 65px,
+      rgba(242, 242, 242, 1) 65px,
+      rgba(242, 242, 242, 1) 100%
+    );
+  }
+
   // Desktop
   @media (min-width: @desktop-width) {
-    width: 245px;
+    width: 169px;
     margin: 0;
+    padding: 10px 38px 40px 38px;
+  }
+}
+
+.card__wrapper--last {
+  // Tablet
+  @media (min-width: @tablet-width) {
+    width: 280px;
+    padding: 50px 20px 82px 20px;
+
+    background-color: #ffffff;
+    background-image: none;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    width: 210px;
+    margin: 0;
+    padding: 50px 40px 90px 40px;
   }
 }
 
@@ -44,7 +85,48 @@
 
 .card__container {
   display: flex;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    margin-bottom: 32px;
+  }
 }
+
+.card__link {
+  // Tablet
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+    height: 210px;
+    margin: auto;
+    // display: block;
+    margin-bottom: 22px;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    width: 200px;
+  }
+}
+
+.card__image {
+  // Tablet
+  @media (min-width: @tablet-width) {
+    min-width: 161px;
+    max-width: 168px;
+    height: auto;
+    text-align: center;
+  }
+}
+
+// .card__text {
+//   // Tablet
+//   @media (min-width: @tablet-width) {
+//     display: flex;
+//     flex-direction: column;
+//   }
+// }
 
 .card__title-link {
   text-decoration: none;
@@ -62,20 +144,80 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    min-width: 135px;
+    display: flex;
+    text-align: center;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    margin-bottom: 24px;
+  }
 }
 
 .card__description {
   width: 140px;
   margin-bottom: 4px;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    margin-bottom: 0;
+  }
 }
 
 .card__row {
   display: flex;
   justify-content: space-between;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    // margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
+
+// .card-row::after {
+//   // Tablet
+//   @media (min-width: @tablet-width) {
+//     content: "";
+//     position: absolute;
+//     background-color: #cdcdcd;
+//     height: 1px;
+//     // top: 15px;
+//     bottom: 1px;
+//     left: 0;
+//     width: 100%;
+//     // z-index: 1;
+//   }
+// }
 
 .card__row:first-child {
   margin-top: 0;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
+}
+
+.card__row:last-child {
+  // Tablet
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+    padding-bottom: 10px;
+  }
 }
 
 .card__spec,
@@ -86,6 +228,13 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+  }
 }
 
 .card__button {
@@ -108,6 +257,20 @@
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+}
+
+.card__button:hover,
+.card__button:active {
+  background-color: @darkgreen;
+}
+
+.card__button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .card__container--last {
@@ -121,9 +284,14 @@
   align-items: center;
   // height: 97px;
 
+  // Tablet
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+
   // Desktop
   @media (min-width: @desktop-width) {
-    width: 245px;
+    width: 210px;
     padding: 0;
     margin: 0;
   }
@@ -133,11 +301,40 @@
   width: 30px;
   min-height: 30px;
   margin-bottom: 23px;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    width: 60px;
+    min-height: 60px;
+    margin-bottom: 50px;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .card__title--last {
   width: 100%;
   margin-bottom: 8px;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    margin-bottom: 23px;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    margin-bottom: 26px;
+  }
+}
+
+.card__more {
+  // Tablet
+  @media (min-width: @tablet-width) {
+    width: 170px;
+  }
 }
 
 .card__button-more {
@@ -151,163 +348,29 @@
   background: #f2f2f2;
   color: #444444;
 
+  // Tablet
+  @media (min-width: @tablet-width) {
+    padding: 10px 81px 10px 79px;
+    // margin-top: 82px;
+    margin-bottom: 40px;
+  }
+
   // Desktop
   @media (min-width: @desktop-width) {
     // width: 245px;
-    padding: 10px 39px;
+    padding: 10px 40px 10px 39px;
   }
 }
 
-// Desktop
-// /* Last card */
-// .catalog__card--last {
-//   display: flex;
-//   width: 245px;
-//   height: 431px;
-//   flex-direction: column;
-//   /* justify-content: center; */
-//   align-items: center;
-// }
+.card__button-more:hover,
+.card__button-more:active {
+  background: #ebebeb;
+  color: #444444;
+}
 
-// .card__container--last {
-//   background-color: #ffffff;
-//   height: 300px;
-//   width: 170px;
-//   display: flex;
-//   flex-direction: column;
-//   padding: 50px 40px 40px;
-// }
-
-// .card__svg--last {
-//   width: 60px;
-//   min-height: 60px;
-//   margin-bottom: 40px;
-//   display: block;
-//   margin-left: auto;
-//   margin-right: auto;
-// }
-
-// .card__more {
-//   margin-bottom: 75px;
-// }
-
-// .catalog__button-more {
-//   margin-top: 0;
-//   display: flex;
-//   width: 90px;
-//   height: 20px;
-//   padding: 10px 40px 10px 39px;
-//   justify-content: center;
-//   align-items: center;
-//   background: #f2f2f2;
-//   color: #444444;
-// }
-
-// Desktop
-// .catalog__card {
-//   position: relative;
-//   padding-top: 81px;
-//   width: 245px;
-// }
-
-// .card__image--container {
-//   position: absolute;
-//   top: 10px;
-//   left: 38px;
-//   /* width: 100%; */
-//   /* text-align: center; */
-//   margin-bottom: 12px;
-//   height: 210px;
-//   width: 169px;
-// }
-
-// .card__link {
-//   // display: flex;
-//   // align-items: center;
-//   height: 172px;
-//   margin: auto;
-//   display: block;
-// }
-
-// .card__image {
-//   /* width: 161px;
-//   height: 172px; */
-
-//   margin: 0 auto;
-//   object-fit: cover;
-// }
-
-// .card__container {
-//   background-color: #f2f2f2;
-//   padding: 151px 38px 40px;
-// }
-
-// .card__text {
-//   margin-bottom: 43px;
-// }
-
-// .card__title-link {
-//   text-decoration: none;
-// }
-
-// .card__title {
-//   margin: 0;
-//   margin-left: 15px;
-//   width: 140px;
-//   margin-bottom: 23px;
-//   color: #222222;
-//   text-align: center;
-//   font-family: "Oswald", sans-serif;
-//   font-size: 20px;
-//   font-weight: 400;
-//   line-height: 24px;
-//   text-transform: uppercase;
-// }
-
-// .card__description {
-//   margin-bottom: 5px;
-// }
-
-// .card__row {
-//   display: flex;
-//   justify-content: space-between;
-//   margin-top: 5px;
-//   margin-bottom: 5px;
-//   position: relative;
-// }
-
-// .card__row:first-child {
-//   margin-top: 0;
-// }
-
-// .card__row::after {
-//   content: "";
-//   position: absolute;
-//   background-color: #cdcdcd;
-//   display: block;
-//   width: 169px;
-//   height: 1px;
-//   left: 0;
-//   bottom: -4px;
-// }
-
-// .card__row:last-child::after {
-//   content: "";
-//   position: absolute;
-//   background-color: #cdcdcd;
-//   display: block;
-//   width: 169px;
-//   height: 1px;
-//   left: 0;
-//   bottom: -10px;
-// }
-
-// .card__spec,
-// .card__meaning {
-//   color: #444444;
-//   text-align: center;
-//   font-family: "Lato", sans-serif;
-//   font-size: 16px;
-//   font-weight: 400;
-//   line-height: 20px;
+// .card__button-more:active {
+//   // Tablet
+//   @media (min-width: @tablet-width) {
+//     background: #ebebeb;
+//   }
 // }

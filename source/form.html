@@ -185,7 +185,7 @@
                     >имя:*</label
                   >
                   <input
-                    class="form__control form__control--data"
+                    class="form__control form__control--data invalid"
                     type="text"
                     size="55"
                     placeholder="Барсик"
@@ -193,12 +193,14 @@
                     id="cat-name"
                     required
                   />
+                  <!-- При добавлении класса invalid для input - будет состояние ошибки -->
                 </div>
 
                 <div class="form__row">
                   <label class="form__label form__label--data" for="cat-age"
                     >Вес (кг):*</label
                   >
+                  <!-- При добавлении класса invalid для input - будет состояние ошибки -->
                   <input
                     class="form__control form__control--data"
                     type="number"
@@ -213,8 +215,9 @@
                   <label class="form__label form__label--data" for="cat-weight"
                     >Возраст (лет):</label
                   >
+                  <!-- При добавлении класса invalid для input - будет состояние ошибки -->
                   <input
-                    class="form__control form__control--data"
+                    class="form__control form__control--data invalid"
                     type="number"
                     placeholder="7"
                     name="cat-weight"
@@ -230,6 +233,7 @@
           <div class="container container--block">
             <div class="form__wrapper form__wrapper--radio">
               <ul class="form__list form__list--radio">
+                <!-- При добавлении класса form__item--disabled и form__item--checked-disabled будет не активной-->
                 <li class="form__item form__item--checked">
                   <label class="form__label form__label--radio">
                     <input
@@ -243,6 +247,7 @@
                     <span class="form__control-label">похудение</span>
                   </label>
                 </li>
+                <!-- При добавлении класса form__item--disabled и form__item--checked-disabled будет не активной-->
                 <li class="form__item">
                   <label class="form__label form__label--radio">
                     <input
@@ -285,27 +290,62 @@
                 <label class="form__label form__label--contacts" for="email"
                   >E-mail:*</label
                 >
+                <!-- При добавлении класса invalid для input - будет состояние ошибки -->
                 <input
-                  class="form__control form__control--contacts form__control--email"
+                  class="form__control form__control--contacts form__control--email invalid"
                   type="email"
                   placeholder="кuklachev@gmail.com"
                   name="email"
                   id="email"
                   required
                 />
+                <svg
+                  class="form__control-svg form__control-svg--email"
+                  aria-label="Email адресс."
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M1.5 8.5V16.5H18.5V8.5M1.5 3.5H18.5V5.5L10 11.5L1.5 5.5V3.5Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
+
               <div class="form__row form__row--contacts">
                 <label class="form__label form__label--contacts" for="phone"
                   >Телефон:*</label
                 >
+                <!-- При добавлении класса invalid для input - будет состояние ошибки -->
                 <input
-                  class="form__control form__control--contacts form__control--phone"
+                  class="form__control form__control--contacts form__control--phone invalid"
                   type="tel"
                   placeholder="8 (960) 900-60-90"
                   name="phone"
                   id="phone"
                   required
                 />
+                <svg
+                  class="form__control-svg form__control-svg--phone"
+                  aria-label="Номер телефона."
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                >
+                  <path
+                    d="M10.0022 10H18.5041M18.5041 10L16.0036 7.5M18.5041 10L16.0036 12.5M8.50191 2.5V7.5H5.50124V12.5H8.50191V17.5H6.00135C4.50102 17.5 3.50079 16.5 3.50079 15V5C3.50079 3.5 4.50102 2.5 6.00135 2.5H8.50191Z"
+                    stroke="black"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
               </div>
             </div>
           </div>
@@ -334,6 +374,7 @@
           <div class="form__wrapper form__wrapper--checkbox container">
             <h3 class="form__title form__title--checkbox">Дополнительно</h3>
             <ul class="form__list form__list--checkbox">
+              <!-- При добавлении класса form__list-item--disabled и form__list-item--checked-disabled будет не активной-->
               <li class="form__list-item form__list-item--checked">
                 <label
                   class="form__label form__label--checkbox"
