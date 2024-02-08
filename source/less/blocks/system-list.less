@@ -77,7 +77,6 @@
     position: absolute;
     top: 0;
     right: 0;
-    // background-position: -100px -100px;
     width: 200px;
     height: 200px;
     margin: 0;
@@ -219,32 +218,47 @@
   }
 }
 
+// Arrow
 .system-list__button {
+  position: relative;
+}
+
+.system-list__button-link {
   // display: flex;
-  cursor: pointer;
-  background-image: url("../img/arrow-link.svg");
-  background-repeat: no-repeat;
-  background-position: 100px 3px;
+  text-decoration: none;
+  // cursor: pointer;
+  // background-image: url("../img/arrow-link.svg");
+  // background-repeat: no-repeat;
+  // background-position: 100px 3px;
+  position: relative;
 
   // Tablet
   @media (min-width: @tablet-width) {
     width: 180px;
-    background-position: 130px 3px;
+    // background-position: 130px 3px;
   }
 }
 
-.system-list__button:hover,
-.system-list__button:active {
+.system-list__button-link::after {
+  content: "";
+  position: absolute;
+  // background-color: #d9d9d9;
+  width: 32px;
+  height: 12px;
+  top: 1px;
+  right: -32px;
+
   background-image: url("../img/arrow-link-state.svg");
 }
 
-.system-list__button:active {
-  opacity: 0.3;
-}
+// .system-list__button-link:hover,
+// .system-list__button-link:active {
+//   background-image: url("../img/arrow-link-state.svg");
+// }
 
-.system-list__button-link {
-  text-decoration: none;
-}
+// .system-list__button-link:active {
+//   opacity: 0.3;
+// }
 
 .system-list__button-title {
   color: #000000;
