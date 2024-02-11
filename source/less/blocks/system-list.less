@@ -6,6 +6,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  flex-wrap: wrap;
 
   // Desktop
   @media (min-width: @desktop-width) {
@@ -161,7 +162,7 @@
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
-    position: absolute;
+    // position: absolute;
     left: 0;
     top: 0;
     margin-bottom: 24px;
@@ -224,43 +225,9 @@
 }
 
 .system-list__button-link {
-  // display: flex;
   text-decoration: none;
-  // cursor: pointer;
-  // background-image: url("../img/arrow-link.svg");
-  // background-repeat: no-repeat;
-  // background-position: 100px 3px;
   position: relative;
 
-  // Tablet
-  @media (min-width: @tablet-width) {
-    width: 180px;
-    // background-position: 130px 3px;
-  }
-}
-
-.system-list__button-link::after {
-  content: "";
-  position: absolute;
-  // background-color: #d9d9d9;
-  width: 32px;
-  height: 12px;
-  top: 1px;
-  right: -32px;
-
-  background-image: url("../img/arrow-link-state.svg");
-}
-
-// .system-list__button-link:hover,
-// .system-list__button-link:active {
-//   background-image: url("../img/arrow-link-state.svg");
-// }
-
-// .system-list__button-link:active {
-//   opacity: 0.3;
-// }
-
-.system-list__button-title {
   color: #000000;
   text-align: center;
   font-family: "Oswald", "Arial", sans-serif;
@@ -268,12 +235,57 @@
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
-  margin-right: 15px;
+
+  padding-right: 47px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 12px;
+    top: 5px;
+    right: 0;
+
+    background-image: url("../img/arrow-link-state.svg");
+    background-position: right 8px center;
+    background-repeat: no-repeat;
+    transition: background-position 0.3s;
+
+    // Tablet
+    @media (min-width: @tablet-width) {
+      top: 1px;
+    }
+  }
+
+  &:hover::after {
+    background-position: right 0 center;
+    transition: background-position 0.3s;
+  }
 
   // Tablet
   @media (min-width: @tablet-width) {
+    display: inline-block;
+    padding-right: 57px;
     font-size: 20px;
     font-weight: 400;
-    margin-right: 25px;
   }
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 32px;
+  //   height: 12px;
+  //   top: 1px;
+  //   right: 0;
+
+  //   background-image: url("../img/arrow-link-state.svg");
+  //   background-position: right 8px center;
+  //   background-repeat: no-repeat;
+  //   transition: background-position 0.3s;
+  // }
+
+  // &:hover::after {
+  //   background-position: right 0 center;
+  //   transition: background-position 0.3s;
+  // }
 }

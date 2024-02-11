@@ -1,14 +1,17 @@
 // Mobile
 .card {
   position: relative;
-  // width: 280px;
   width: 100%;
   margin: 0 auto;
   display: flex;
-  padding-top: 20px;
-  padding-bottom: 25px;
+  // padding-top: 20px;
+  // padding-bottom: 25px;
   flex-direction: column;
   border-bottom: 1px solid #ebebeb;
+
+  &:last-child {
+    border-bottom: none;
+  }
 
   // Tablet
   @media (min-width: @tablet-width) {
@@ -22,21 +25,24 @@
     width: 245px;
     margin: 0;
   }
-
-  // // Desktop
-  // @media (min-width: @desktop-width) {
-  //   width: 245px;
-  // }
 }
+
+// .card:last-child {
+//   border-bottom: none;
+// }
 
 .card__wrapper {
   width: 280px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 0 25px 0;
 
   // Tablet
   @media (min-width: @tablet-width) {
     width: 250px;
     padding: 10px 37px 40px 37px;
+    // margin-bottom: 32px;
 
     background-image: linear-gradient(
       to bottom,
@@ -55,45 +61,53 @@
   }
 }
 
+.card__box {
+  // Mobile
+  @media (max-width: @mobile-width-only) {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 17px;
+  }
+}
+
 .card__wrapper--last {
+  background-color: #ffffff;
+  // width: 229px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 0 25px 0;
+  margin: 0;
+  // padding-left: 25px;
+  // padding-right: 25px;
+  // margin-bottom: 21px;
+  align-items: center;
+  // height: 97px;
+
   // Tablet
   @media (min-width: @tablet-width) {
-    width: 280px;
-    padding: 50px 20px 82px 20px;
+    // width: 280px;
+    padding: 50px 40px 40px 40px;
+    margin: 0;
 
     background-color: #ffffff;
     background-image: none;
+    border: 2px solid @lightgray;
   }
 
   // Desktop
   @media (min-width: @desktop-width) {
     width: 170px;
     margin: 0;
-    padding: 50px 38px 90px 38px;
-  }
-}
-
-// .card:not(:last-child)::after {
-//   content: "";
-//   position: absolute;
-//   width: 320px;
-//   height: 1px;
-//   background: #ebebeb;
-//   bottom: 0;
-//   left: -20px;
-// }
-
-.card__container {
-  display: flex;
-
-  // Tablet
-  @media (min-width: @tablet-width) {
-    flex-direction: column;
-    margin-bottom: 32px;
+    padding: 50px 37px 40px 37px;
   }
 }
 
 .card__link {
+  display: inline-block;
+  // width: 140px;
+  height: 107px;
+  justify-content: center;
+
   // Tablet
   @media (min-width: @tablet-width) {
     display: flex;
@@ -106,7 +120,8 @@
 
   // Desktop
   @media (min-width: @desktop-width) {
-    width: 200px;
+    // width: 200px;
+    margin-bottom: 12px;
   }
 }
 
@@ -128,8 +143,11 @@
 //   }
 // }
 
-.card__title-link {
-  text-decoration: none;
+.card__container--text {
+  // Tablet
+  @media (min-width: @tablet-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .card__title {
@@ -151,7 +169,7 @@
     font-weight: 400;
     line-height: 24px;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     min-width: 135px;
     display: flex;
     text-align: center;
@@ -238,13 +256,11 @@
 }
 
 .card__button {
-  margin-top: 17px;
+  // margin-top: 17px;
   display: flex;
-  // width: 280px;
-  // height: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  // padding: 10px 53px 10px 55px;
+  // padding: 10px 0 10px 0;
   justify-content: center;
   align-items: center;
   background-color: #68b738;
@@ -273,30 +289,6 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-.card__container--last {
-  background-color: #ffffff;
-  width: 229px;
-  display: flex;
-  flex-direction: column;
-  padding-left: 25px;
-  padding-right: 25px;
-  margin-bottom: 21px;
-  align-items: center;
-  // height: 97px;
-
-  // Tablet
-  @media (min-width: @tablet-width) {
-    margin: 0;
-  }
-
-  // Desktop
-  @media (min-width: @desktop-width) {
-    width: 170px;
-    padding: 0;
-    margin: 0;
-  }
-}
-
 .card__svg--last {
   width: 30px;
   min-height: 30px;
@@ -316,7 +308,9 @@
 }
 
 .card__title--last {
-  width: 134px;
+  // width: 134px;
+  width: 203px;
+  text-align: center;
   margin-bottom: 8px;
 
   // Tablet
@@ -331,18 +325,28 @@
 }
 
 .card__more {
+  margin-bottom: 21px;
+
   // Tablet
   @media (min-width: @tablet-width) {
     width: 170px;
+    margin-bottom: 82px;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    margin-bottom: 90px;
   }
 }
 
 .card__button-more {
   margin-top: 0;
+  // margin-top: auto;
+  width: 100%;
   display: flex;
   // width: 90px;
   // height: 20px;
-  padding: 10px 96px 10px 94px;
+  padding: 10px 0 10px 0;
   justify-content: center;
   align-items: center;
   background: #f2f2f2;
@@ -350,15 +354,15 @@
 
   // Tablet
   @media (min-width: @tablet-width) {
-    padding: 10px 81px 10px 79px;
+    padding: 10px 0 10px 0;
     // margin-top: 82px;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
   }
 
   // Desktop
   @media (min-width: @desktop-width) {
     // width: 245px;
-    padding: 10px 40px 10px 39px;
+    padding: 10px 0 10px 0;
   }
 }
 
