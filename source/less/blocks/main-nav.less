@@ -21,26 +21,22 @@
 // Toggle
 .main-nav__toggle {
   position: absolute;
-  top: 13px;
+  top: 0;
   right: 20px;
   z-index: 2;
   display: block;
   width: 25px;
   height: 38px;
-  background-color: transparent;
+  // background-color: transparent;
+  background-color: rgb(244, 197, 205);
   cursor: pointer;
   border: none;
   padding: 0;
 
   // Tablet
   @media (min-width: @tablet-width) {
-    display: none;
+    // display: none;
   }
-
-  // // Desktop
-  // @media (min-width: @desktop-width) {
-  //   display: none;
-  // }
 }
 
 @media (max-width: @mobile-width-only) {
@@ -100,7 +96,6 @@
   .main-nav--opened .main-nav__toggle {
     top: 0;
     right: 20px;
-    // background-color: rgb(246, 218, 222);
 
     &::before,
     &::after {
