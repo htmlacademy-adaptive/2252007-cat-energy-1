@@ -548,9 +548,9 @@ img {
     line-height: 24px;
     margin: 0 auto;
     margin-bottom: 21px;
-    min-width: 135px;
     display: flex;
     text-align: center;
+    width: 140px;
   }
 }
 @media (min-width: 1300px) {
@@ -669,6 +669,7 @@ img {
 @media (min-width: 1300px) {
   .card__title--last {
     margin-bottom: 26px;
+    width: 135px;
   }
 }
 .card__more {
@@ -1288,7 +1289,7 @@ img {
 .form__wrapper--radio {
   width: 280px;
   margin: 0 auto;
-  padding: 22px 21px 19px 0;
+  padding: 22px 21px 19px 20px;
 }
 @media (min-width: 768px) {
   .form__wrapper--radio {
@@ -1533,8 +1534,7 @@ img {
 }
 @media (min-width: 768px) {
   .form__container-radio {
-    border-top: none;
-    border-bottom: none;
+    border: none;
   }
 }
 @media (min-width: 1300px) {
@@ -1592,6 +1592,9 @@ img {
 @media (min-width: 768px) {
   .form__control {
     height: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
   }
 }
 .form__control:hover {
@@ -1690,6 +1693,7 @@ input[type="number"] {
 .form__list--radio {
   margin: 0;
   padding: 0;
+  display: flex;
   flex-wrap: wrap;
 }
 .form__label--radio {
@@ -1860,6 +1864,11 @@ input[type="number"] {
   padding-left: 45px;
   display: flex;
 }
+@media (min-width: 768px) {
+  .form__label--checkbox {
+    padding-left: 60px;
+  }
+}
 .form__control-label--checkbox {
   color: #444444;
   font-family: "Oswald", "Arial", sans-serif;
@@ -1869,6 +1878,13 @@ input[type="number"] {
   text-transform: uppercase;
   padding-top: 6px;
   padding-bottom: 6px;
+}
+@media (min-width: 768px) {
+  .form__control-label--checkbox {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+  }
 }
 .form__control-checkbox {
   position: relative;
@@ -1884,6 +1900,12 @@ input[type="number"] {
   background-position: 7px 7px;
   background-size: 26px;
   border-radius: 0;
+}
+@media (min-width: 768px) {
+  .form__control-mark--checkbox {
+    width: 40px;
+    height: 40px;
+  }
 }
 /* Checkbox Disabled */
 .form__list-item--disabled,
@@ -2051,6 +2073,10 @@ input[type="number"] {
     z-index: 1;
   }
 }
+.main-header .main-header__box {
+  display: flex;
+  justify-content: space-between;
+}
 @media (min-width: 768px) {
   .main-header {
     padding-top: 25px;
@@ -2065,6 +2091,7 @@ input[type="number"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 @media (min-width: 768px) {
   .main-header .main-header__wrapper {
@@ -2121,16 +2148,23 @@ input[type="number"] {
 .main-header .main-header__logo-state:active {
   opacity: 0.6;
 }
-.main-nav {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: transparent;
-  z-index: 2;
+@media (max-width: 767px) {
+  .main-nav--nojs .main-nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 2;
+  }
 }
 @media (min-width: 768px) {
   .main-nav {
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 2;
     position: relative;
     max-width: 436px;
   }
@@ -2142,13 +2176,13 @@ input[type="number"] {
 }
 .main-nav__toggle {
   position: absolute;
-  top: 13px;
+  top: 0;
   right: 20px;
   z-index: 2;
   display: block;
   width: 25px;
   height: 38px;
-  background-color: transparent;
+  background-color: #f4c5cd;
   cursor: pointer;
   border: none;
   padding: 0;
@@ -2162,10 +2196,6 @@ input[type="number"] {
   .main-nav--nojs .main-nav__toggle {
     display: none;
   }
-  .main-nav--nojs .main-nav__wrapper {
-    position: static;
-    min-height: 0;
-  }
   .main-nav--nojs .site-list__item {
     display: block;
   }
@@ -2177,11 +2207,14 @@ input[type="number"] {
   }
   .main-nav--opened .main-nav__wrapper {
     position: absolute;
-    top: 66px;
+    top: 53px;
     z-index: 5;
     left: 0;
     width: 100%;
     background-color: #ffffff;
+  }
+  .main-nav--closed {
+    display: none;
   }
   .main-nav--closed .main-nav__toggle::before {
     content: "";
@@ -2238,6 +2271,10 @@ input[type="number"] {
 }
 .map {
   margin: 0 auto;
+}
+.map iframe {
+  border: none;
+  display: block;
 }
 .map__wrapper--index {
   background-image: url("../img/map-mobile.png");
@@ -2346,7 +2383,7 @@ input[type="number"] {
   }
 }
 @media (min-width: 1300px) {
-  .nav-list__link--desktop {
+  .nav-list__link {
     color: #ffffff;
   }
 }
@@ -2887,8 +2924,8 @@ input[type="number"] {
   .system-list__item-image--loose {
     width: 140px;
     height: 194px;
-    top: 4px;
-    right: 30px;
+    top: -11px;
+    left: 30px;
   }
 }
 @media (min-width: 1300px) {
@@ -2908,7 +2945,7 @@ input[type="number"] {
     width: 268px;
     height: 112px;
     top: 44px;
-    right: -34px;
+    left: -34px;
   }
 }
 @media (min-width: 1300px) {
