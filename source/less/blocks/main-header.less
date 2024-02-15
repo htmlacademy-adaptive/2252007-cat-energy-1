@@ -88,46 +88,31 @@
   }
 }
 
-.main-header__logo-image--link {
-  display: block;
-  // background-image: url("..//img/logo-mobile.jpg");
-  // background-repeat: no-repeat;
-  // background-position: center;
-  width: 33px;
-  height: 38px;
-
+.main-header__logo--image {
   // Tablet
   @media (min-width: @tablet-width) {
-    display: block;
-    // background-image: url("..//img/logo-tablet.jpg");
-    // background-repeat: no-repeat;
-    // background-position: center;
     width: 60px;
     height: 50px;
-    // object-fit: cover;
+    flex-shrink: 0;
   }
 
   // Desktop
   @media (min-width: @desktop-width) {
-    display: block;
-    // background-image: url("..//img/logo-desktop.jpg");
-    // background-repeat: no-repeat;
-    // background-position: center;
     width: 70px;
     height: 59px;
   }
 }
 
-.main-header__logo-name--name {
+.main-header__logo--name {
   display: flex;
   align-items: center;
 }
 
-.main-header__logo-state:hover {
+.main-header__logo:hover {
   opacity: 0.8;
 }
 
-.main-header__logo-state:active {
+.main-header__logo:active {
   opacity: 0.6;
 }
 

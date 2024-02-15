@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Cat Energy</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="/favicon.ico" />
+    <!-- 32×32 -->
+    <link rel="icon" href="img/Favicons/icon-152.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/Favicons/icon-152.png" />
+    <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body class="page__body">
     <!-- Header -->
@@ -12,13 +18,20 @@
       <div class="main-header__wrapper">
         <div class="main-header__box">
           <a class="main-header__logo" href="">
-            <img
-              class="main-header__logo--image"
-              src="img/logo-mobile.jpg"
-              width="33"
-              height="38"
-              alt="Логотип магазина Cat Energy."
-            />
+            <picture>
+              <source
+                media="(min-width:1300px)"
+                srcset="img/logo-desktop.jpg"
+              />
+              <source media="(min-width:768px)" srcset="img/logo-tablet.jpg" />
+              <img
+                class="main-header__logo--image"
+                src="img/logo-mobile.jpg"
+                width="33"
+                height="38"
+                alt="Логотип магазина Cat Energy."
+              />
+            </picture>
             <svg
               class="main-header__logo--name logo-name__svg logo-name__top"
               aria-label="Название магазина Cat Energy."
@@ -119,21 +132,29 @@
               подобрать программу
             </a>
           </div>
-          <img
-            class="program__image"
-            src="img/main-image-mobile.png"
-            width="280"
-            height="270"
-            alt="Образец упаковки продукта."
-          />
-
-          <!-- <img
-            class="program__image"
-            src="img/main-image.png"
-            width="552"
-            height="499"
-            alt="Образец упаковки продукта."
-          /> -->
+          <picture>
+            <source
+              media="(min-width:1300px)"
+              srcset="
+                img/main-image-desktop.png    1x,
+                img/main-image-desktop@2x.png 2x
+              "
+            />
+            <source
+              media="(min-width:768px)"
+              srcset="
+                img/main-image-tablet.png    1x,
+                img/main-image-tablet@2x.png 2x
+              "
+            />
+            <img
+              class="program__image"
+              src="img/main-image-mobile.png"
+              width="280"
+              height="270"
+              alt="Образец упаковки продукта."
+            />
+          </picture>
         </div>
       </section>
 
@@ -367,36 +388,40 @@
           <div class="slider">
             <ul class="slider__list">
               <li class="slider__item">
-                <img
-                  class="before"
-                  src="img/cat-mobile-before1x.png"
-                  width="280"
-                  height="256"
-                  alt="Красивый толстый котик."
-                />
-                <!-- <img
-                  class="before"
-                  src="img/cat-tablet-before1x.png"
-                  width="560"
-                  height="512"
-                  alt="Красивый толстый котик."
-                /> -->
+                <picture>
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      img/cat-tablet-before1x.png    1x,
+                      img/cat-tablet-before1x@2x.png 2x
+                    "
+                  />
+                  <img
+                    class="before"
+                    src="img/cat-mobile-before1x.png"
+                    width="280"
+                    height="256"
+                    alt="Красивый толстый котик."
+                  />
+                </picture>
               </li>
               <li class="slider__item">
-                <img
-                  class="after visually-hidden"
-                  src="img/cat-mobile-after1x.png"
-                  width="280"
-                  height="256"
-                  alt="Красивый стройный котик."
-                />
-                <!-- <img
-                  class="after visually-hidden"
-                  src="img/cat-tablet-after1x.png"
-                  width="560"
-                  height="512"
-                  alt="Красивый стройный котик."
-                /> -->
+                <picture>
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      img/cat-tablet-before1x.png    1x,
+                      img/cat-tablet-before1x@2x.png 2x
+                    "
+                  />
+                  <img
+                    class="after visually-hidden"
+                    src="img/cat-mobile-after1x.png"
+                    width="280"
+                    height="256"
+                    alt="Красивый стройный котик."
+                  />
+                </picture>
               </li>
             </ul>
             <div class="slider__button-box">
