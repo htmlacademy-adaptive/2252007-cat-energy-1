@@ -32,6 +32,16 @@
       background-repeat: no-repeat;
       z-index: 1;
     }
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(104, 183, 56, 0.85) 0,
+          rgba(104, 183, 56, 0.85) 100%
+        ),
+        url("../img/background-desktop@2x.png");
+      background-size: 720px auto;
+    }
   }
 }
 
@@ -88,47 +98,27 @@
   }
 }
 
-.main-header__logo-image--link {
-  display: block;
-  // background-image: url("..//img/logo-mobile.jpg");
-  // background-repeat: no-repeat;
-  // background-position: center;
-  width: 33px;
-  height: 38px;
+.main-header__logo:hover {
+  opacity: 0.8;
+}
 
+.main-header__logo:active {
+  opacity: 0.6;
+}
+
+.main-header__logo--image {
   // Tablet
   @media (min-width: @tablet-width) {
-    display: block;
-    // background-image: url("..//img/logo-tablet.jpg");
-    // background-repeat: no-repeat;
-    // background-position: center;
     width: 60px;
     height: 50px;
-    // object-fit: cover;
+    flex-shrink: 0;
   }
 
   // Desktop
   @media (min-width: @desktop-width) {
-    display: block;
-    // background-image: url("..//img/logo-desktop.jpg");
-    // background-repeat: no-repeat;
-    // background-position: center;
     width: 70px;
     height: 59px;
   }
-}
-
-.main-header__logo-name--name {
-  display: flex;
-  align-items: center;
-}
-
-.main-header__logo-state:hover {
-  opacity: 0.8;
-}
-
-.main-header__logo-state:active {
-  opacity: 0.6;
 }
 
 .main-header__toggle {
