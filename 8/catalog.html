@@ -22,12 +22,12 @@
             <picture>
               <source
                 media="(min-width:1300px)"
-                srcset="img/logo-desktop.jpg"
+                srcset="img/logo-desktop.svg"
               />
-              <source media="(min-width:768px)" srcset="img/logo-tablet.jpg" />
+              <source media="(min-width:768px)" srcset="img/logo-tablet.svg" />
               <img
                 class="main-header__logo--image"
-                src="img/logo-mobile.jpg"
+                src="img/logo-mobile.svg"
                 width="33"
                 height="38"
                 alt="Логотип магазина Cat Energy."
@@ -128,13 +128,17 @@
                   <picture>
                     <source
                       media="(min-width:748px)"
-                      srcset="img/catalog-tablet-1.png"
+                      srcset="
+                        img/catalog-tablet-1.png    1x,
+                        img/catalog-tablet-1@2x.png 2x
+                      "
                     />
                     <img
                       class="card__image"
                       width="140"
                       height="107"
                       src="img/catalog-mobile-1.png"
+                      srcset="img/catalog-mobile-1@2x.png 2x"
                       alt="Курица 500г."
                     />
                   </picture>
@@ -169,13 +173,17 @@
                   <picture>
                     <source
                       media="(min-width:748px)"
-                      srcset="img/catalog-tablet-2.png"
+                      srcset="
+                        img/catalog-tablet-2.png    1x,
+                        img/catalog-tablet-2@2x.png 2x
+                      "
                     />
                     <img
                       class="card__image"
                       width="140"
                       height="107"
                       src="img/catalog-mobile-2.png"
+                      srcset="img/catalog-mobile-2@2x.png 2x"
                       alt="Курица 1000г."
                     />
                   </picture>
@@ -210,13 +218,17 @@
                   <picture>
                     <source
                       media="(min-width:748px)"
-                      srcset="img/catalog-tablet-3.png"
+                      srcset="
+                        img/catalog-tablet-3.png    1x,
+                        img/catalog-tablet-3@2x.png 2x
+                      "
                     />
                     <img
                       class="card__image"
                       width="140"
                       height="107"
                       src="img/catalog-mobile-3.png"
+                      srcset="img/catalog-mobile-3@2x.png 2x"
                       alt="Рыба 500г."
                     />
                   </picture>
@@ -251,13 +263,17 @@
                   <picture>
                     <source
                       media="(min-width:748px)"
-                      srcset="img/catalog-tablet-4.png"
+                      srcset="
+                        img/catalog-tablet-4.png    1x,
+                        img/catalog-tablet-4@2x.png 2x
+                      "
                     />
                     <img
                       class="card__image"
                       width="140"
                       height="107"
                       src="img/catalog-mobile-4.png"
+                      srcset="img/catalog-mobile-4@2x.png 2x"
                       alt="Рыба 1000г."
                     />
                   </picture>
@@ -292,13 +308,17 @@
                   <picture>
                     <source
                       media="(min-width:748px)"
-                      srcset="img/catalog-tablet-5.png"
+                      srcset="
+                        img/catalog-tablet-5.png    1x,
+                        img/catalog-tablet-5@2x.png 2x
+                      "
                     />
                     <img
                       class="card__image"
                       width="140"
                       height="107"
                       src="img/catalog-mobile-5.png"
+                      srcset="img/catalog-mobile-5@2x.png 2x"
                       alt="Гречка 500г."
                     />
                   </picture>
@@ -333,13 +353,17 @@
                   <picture>
                     <source
                       media="(min-width:748px)"
-                      srcset="img/catalog-tablet-6.png"
+                      srcset="
+                        img/catalog-tablet-6.png    1x,
+                        img/catalog-tablet-6@2x.png 2x
+                      "
                     />
                     <img
                       class="card__image"
                       width="140"
                       height="107"
                       src="img/catalog-mobile-6.png"
+                      srcset="img/catalog-mobile-6@2x.png 2x"
                       alt="Гречка 1000г."
                     />
                   </picture>
@@ -374,13 +398,17 @@
                   <picture>
                     <source
                       media="(min-width:748px)"
-                      srcset="img/catalog-tablet-7.png"
+                      srcset="
+                        img/catalog-tablet-7.png    1x,
+                        img/catalog-tablet-7@2x.png 2x
+                      "
                     />
                     <img
                       class="card__image"
                       width="140"
                       height="107"
                       src="img/catalog-mobile-7.png"
+                      srcset="img/catalog-mobile-7@2x.png 2x"
                       alt="Рис 500г."
                     />
                   </picture>
@@ -576,7 +604,6 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-        <!-- </div> -->
       </section>
 
       <!-- Logo Social -->
@@ -739,5 +766,7 @@
         </div>
       </section>
     </footer>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
