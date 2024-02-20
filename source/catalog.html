@@ -437,7 +437,11 @@
           </li>
           <li class="catalog__card catalog__card--last card">
             <div class="card__wrapper card__wrapper--last">
-              <svg
+              <!-- SVG -->
+              <svg class="card__svg card__svg--last" width="30" height="30">
+                <use xlink:href="img/sprite.svg#icon-more"></use>
+              </svg>
+              <!-- <svg
                 class="card__svg card__svg--last"
                 aria-label="Показать еще 100500 товаров."
                 xmlns="http://www.w3.org/2000/svg"
@@ -460,7 +464,7 @@
                   stroke="#D3D3D3"
                   stroke-width="2"
                 />
-              </svg>
+              </svg> -->
               <h2 class="card__title card__title--last">
                 Показать еще 100500 товаров
               </h2>
@@ -523,14 +527,11 @@
                 </li>
               </ul>
               <div class="additional__gift">
-                <!-- <img
-                  class="additional__gift--image"
-                  src="img/gift.png"
-                  width="280"
-                  height="290"
-                  alt="Кот в рюкзаке."
-                /> -->
-                <svg
+                <!-- Svg -->
+                <svg class="additional__gift-icon-svg" width="78" height="81">
+                  <use xlink:href="img/sprite.svg#icon-gift"></use>
+                </svg>
+                <!-- <svg
                   class="additional__gift-icon-svg"
                   aria-label="Подарок."
                   xmlns="http://www.w3.org/2000/svg"
@@ -563,7 +564,7 @@
                     d="M61.9496 51.8567H16.0929C15.4201 51.8567 14.8741 51.3142 14.8741 50.6456C14.8741 49.9771 15.4201 49.4346 16.0929 49.4346H61.9496C62.6223 49.4346 63.1683 49.9771 63.1683 50.6456C63.1683 51.3142 62.6229 51.8567 61.9496 51.8567Z"
                     fill="white"
                   />
-                </svg>
+                </svg> -->
                 <p class="additional__gift-text">
                   Закажите все и получите чехол для кота в подарок!
                 </p>
