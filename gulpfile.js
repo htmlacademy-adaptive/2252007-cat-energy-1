@@ -7,6 +7,7 @@ import rename from "gulp-rename";
 import autoprefixer from "autoprefixer";
 import browser from "browser-sync";
 import htmlmin from "gulp-htmlmin";
+import del from "del";
 
 // Styles
 
@@ -58,7 +59,7 @@ const copyImages = () => {
 
 // WebP
 
-const createWebP = () => {
+const createWebp = () => {
   return gulp
     .src("source/img/**/*.{jpg,png}")
     .pipe(squoosh({ webp: {} }))
@@ -103,7 +104,7 @@ const copy = (done) => {
 // Clean
 
 const clean = () => {
-  return del("build");
+  return del("build").pipe(del);
 };
 
 // Server
