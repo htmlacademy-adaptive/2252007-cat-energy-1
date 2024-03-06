@@ -8,6 +8,7 @@ import autoprefixer from "autoprefixer";
 import browser from "browser-sync";
 import htmlmin from "gulp-htmlmin";
 import del from "del";
+import squoosh from "gulp-libsquoosh";
 
 // Styles
 
@@ -104,7 +105,7 @@ const copy = (done) => {
 // Clean
 
 const clean = () => {
-  return del("build").pipe(del);
+  return del("build");
 };
 
 // Server
