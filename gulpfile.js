@@ -9,6 +9,9 @@ import browser from "browser-sync";
 import htmlmin from "gulp-htmlmin";
 import del from "del";
 import squoosh from "gulp-libsquoosh";
+import terser from "gulp-terser";
+import svgo from "gulp-svgmin";
+import svgstore from "gulp-svgstore";
 
 // Styles
 
@@ -89,11 +92,8 @@ const sprite = () => {
 const copy = (done) => {
   gulp
     .src(
-      [
-        "source/fonts/*.{woff2,woff}",
-        "source/*.ico",
-        "source/less/manifest/webmanifest",
-      ],
+      ["source/fonts/*.{woff2,woff}", "source/*.ico"],
+      "source/manifest.webmanifest",
       {
         base: "sourse",
       }
