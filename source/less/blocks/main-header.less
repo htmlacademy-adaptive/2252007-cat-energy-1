@@ -67,9 +67,10 @@
 }
 
 .main-header__box {
+  display: inline-block;
   position: relative;
   width: 280px;
-  padding: 13px 20px 15px;
+  padding: 13px 20px 7px;
   margin: 0 auto;
 
   // Tablet
@@ -114,7 +115,7 @@
 
 .main-header__logo--name {
   display: flex;
-  align-items: center;
+  // align-items: center;
 }
 
 .main-header__logo:hover {
@@ -132,7 +133,7 @@
 @media (max-width: @mobile-width-only) {
   .main-header__toggle {
     position: absolute;
-    top: 13px;
+    top: 9px;
     right: 20px;
     z-index: 2;
     display: block;

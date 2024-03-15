@@ -22,14 +22,6 @@
   }
 }
 
-.before {
-  // Tablet
-  @media (min-width: @tablet-width) {
-    width: 560px;
-    height: auto;
-  }
-}
-
 .slider__list {
   list-style: none;
   padding: 0;
@@ -45,6 +37,22 @@
   // Desktop
   @media (min-width: @desktop-width) {
     padding: 0;
+  }
+}
+
+.slider__item {
+  position: absolute;
+  width: 50%;
+  overflow: hidden;
+  background: #eaeaea;
+}
+
+.slider__item-before {
+  // Tablet
+  @media (min-width: @tablet-width) {
+    max-width: none;
+    width: 560px;
+    height: auto;
   }
 }
 

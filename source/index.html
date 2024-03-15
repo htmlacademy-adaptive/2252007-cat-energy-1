@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Cat Energy</title>
     <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="favicon.ico" />
     <!-- 32×32 -->
-    <link rel="icon" href="img/Favicons/icon-152.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="img/Favicons/icon-152.png" />
+    <link rel="icon" href="img/favicons/icon-152.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/favicons/icon-152.png" />
     <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest" />
   </head>
@@ -127,6 +127,7 @@
                     class="system-list__item-image system-list__item-image--loose"
                     width="36"
                     height="50"
+                    viewBox="0 0 36 50"
                   >
                     <use xlink:href="img/sprite.svg#icon-cat-loose"></use>
                   </svg>
@@ -151,6 +152,7 @@
                     class="system-list__item-image system-list__item-image--gain"
                     width="67"
                     height="28"
+                    viewBox="0 0 67 28"
                   >
                     <use xlink:href="img/sprite.svg#icon-cat-gain"></use>
                   </svg>
@@ -177,7 +179,12 @@
           <ul class="explanation__list steps-list">
             <li class="steps-list__item">
               <!-- SVG -->
-              <svg class="steps-list__icon" width="25" height="28">
+              <svg
+                class="steps-list__icon"
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+              >
                 <use xlink:href="img/sprite.svg#steps-item-1"></use>
               </svg>
               <p class="steps-list__description">
@@ -189,7 +196,12 @@
 
             <li class="steps-list__item">
               <!-- SVG -->
-              <svg class="steps-list__icon" width="27" height="29">
+              <svg
+                class="steps-list__icon"
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+              >
                 <use xlink:href="img/sprite.svg#steps-item-2"></use>
               </svg>
               <p class="steps-list__description">
@@ -201,7 +213,12 @@
 
             <li class="steps-list__item">
               <!-- SVG -->
-              <svg class="steps-list__icon" width="26" height="30">
+              <svg
+                class="steps-list__icon"
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+              >
                 <use xlink:href="img/sprite.svg#steps-item-3"></use>
               </svg>
               <p class="steps-list__description">
@@ -213,7 +230,12 @@
 
             <li class="steps-list__item">
               <!-- SVG -->
-              <svg class="steps-list__icon" width="27" height="31">
+              <svg
+                class="steps-list__icon"
+                width="60"
+                height="60"
+                viewBox="0 0 60 60"
+              >
                 <use xlink:href="img/sprite.svg#steps-item-4"></use>
               </svg>
               <p class="steps-list__description">
@@ -271,7 +293,6 @@
                     media="(min-width:768px)"
                     srcset="img/cat-tablet-before.webp 1x, img/cat-tablet-before@2x 2x  "
                   />
-
                   <source
                     type="image/webp"
                     srcset="
@@ -287,7 +308,7 @@
                     "
                   />
                   <img
-                    class="before"
+                    class="slider__item-before"
                     src="img/cat-mobile-before.png"
                     srcset="img/cat-mobile-before@2x.png 2x"
                     width="280"
@@ -306,7 +327,7 @@
                     "
                   />
                   <img
-                    class="after visually-hidden"
+                    class="slider__item-after"
                     src="img/cat-mobile-after.png"
                     srcset="img/cat-mobile-after@2x.png 2x"
                     width="280"
