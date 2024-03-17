@@ -430,9 +430,22 @@
   outline: none;
 }
 
-.form__control:focus-visible + .form__control-svg path {
+.form__control:focus-visible + .form__control-svg {
   stroke: rgba(104, 183, 56, 1);
 }
+
+// .social__link:hover svg,
+// .social__link:focus-visible svg {
+//   fill: rgba(104, 183, 56, 1);
+// }
+
+// .social__link:active svg {
+//   fill: rgba(104, 183, 56, 0.3);
+// }
+
+// .social__link:focus-visible {
+//   outline: none;
+// }
 
 .form input::-webkit-outer-spin-button,
 .form input::-webkit-inner-spin-button {
@@ -772,11 +785,10 @@ input[type="number"] {
 }
 
 // Checkbox Tick
-// .form__control-checkbox[type="checkbox"]:checked
-//   + .form__control-mark--checkbox {
-//   background-image: url("../img/tick.svg");
-//   background-position: center;
-// }
+.form__control-checkbox:checked + span {
+  background-image: url("../img/tick.svg");
+  background-position: center;
+}
 
 .form__control-mark--checkbox {
   position: absolute;
@@ -874,16 +886,8 @@ input[type="number"] {
   box-shadow: 0 0 0 1px @invalid;
 }
 
-.form__control--invalid + .form__control-svg path {
-  border: 1px solid @invalid;
-  box-shadow: 0 0 0 1px @invalid;
+.form__control--invalid + .form__control-svg {
+  // border: 1px solid @invalid;
+  // box-shadow: 0 0 0 1px @invalid;
   stroke: @invalid;
 }
-
-// .form__control--contacts + .invalid {
-//   border: 2px solid @invalid;
-// }
-
-// .invalid + .form__control--contacts {
-//   border: 2px solid @invalid;
-// }

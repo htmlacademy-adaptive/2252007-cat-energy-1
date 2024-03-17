@@ -4,6 +4,18 @@
   margin-bottom: 0;
   background-color: #eaeaea;
 
+  // Tablet
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+    background-image: linear-gradient(
+      to bottom,
+      #ffffff 0,
+      #ffffff 601px,
+      @lightgray 601px,
+      @lightgray 100%
+    );
+  }
+
   // Desktop
   @media (min-width: @desktop-width) {
     background-image: linear-gradient(
@@ -121,8 +133,8 @@
 }
 
 .example__item {
-  width: 124px;
-  height: 56px;
+  width: 123px;
+  height: 54px;
   border: #cdcdcd solid 1px;
   border-radius: 5px;
   position: relative;
@@ -148,6 +160,7 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+  text-transform: uppercase;
 
   // Desktop
   @media (min-width: @desktop-width) {
@@ -175,7 +188,7 @@
   margin: 0;
   margin-top: 7px;
   position: absolute;
-  bottom: -15px;
+  bottom: -16px;
   left: 13px;
   background-color: #eaeaea;
   padding: 0 10px;
@@ -186,6 +199,11 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    background-color: #ffffff;
+  }
 
   // Desktop
   @media (min-width: @desktop-width) {
@@ -204,7 +222,7 @@
 }
 
 .example__text--weight {
-  left: 24px;
+  left: 23px;
 
   // Desktop
   @media (min-width: @desktop-width) {
@@ -221,11 +239,11 @@
   line-height: 20px;
   text-transform: uppercase;
 
-  width: 188px;
+  width: 186px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 20px;
+  padding-bottom: 4px;
 
   // Tablet
   @media (min-width: @tablet-width) {
