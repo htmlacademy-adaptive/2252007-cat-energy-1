@@ -1,10 +1,16 @@
 // Mobile
 .copyright {
-  width: 280px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #444444;
+
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-decoration: none;
 
   // Tablet
   @media (min-width: @tablet-width) {
@@ -14,48 +20,39 @@
   }
 }
 
-.copyright__text {
-  color: #444444;
-  font-family: "Lato", "Arial", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-decoration: none;
-}
-
 .copyright__logo {
   width: 27px;
   height: 34px;
 }
 
-.copyright:hover .copyright__text,
-.copyright:active .copyright__text,
-.copyright:focus-visible .copyright__text {
-  color: rgba(68, 68, 68, 1);
-  outline: none;
-}
+// .copyright:hover .copyright__text,
+// .copyright:active .copyright__text,
+// .copyright:focus-visible .copyright__text {
+//   color: rgba(68, 68, 68, 1);
+//   outline: none;
+// }
 
-.copyright:focus-visible {
-  outline: none;
-}
+// .copyright:focus-visible {
+//   outline: none;
+// }
 
-.copyright:active .copyright__text {
-  opacity: 0.3;
-}
+// .copyright:active .copyright__text {
+//   opacity: 0.3;
+// }
 
-.copyright:active .links__logo-link:hover .logo-name__bottom:hover path {
-  fill: rgba(62, 62, 62, 1);
-}
+// .copyright:active .links__logo-link:hover .logo-name__bottom:hover path {
+//   fill: rgba(62, 62, 62, 1);
+// }
 
-.links__logo-link:active .logo-name__bottom:hover path {
-  fill: rgba(107, 107, 107, 1);
-}
+// .links__logo-link:active .logo-name__bottom:hover path {
+//   fill: rgba(107, 107, 107, 1);
+// }
 
-.copyright:hover svg,
-.copyright:focus-visible svg {
-  fill: rgba(104, 183, 56, 1);
-}
+// .copyright:hover svg,
+// .copyright:focus-visible svg {
+//   fill: rgba(104, 183, 56, 1);
+// }
 
-.copyright:active svg {
-  fill: rgba(104, 183, 56, 0.3);
-}
+// .copyright:active svg {
+//   fill: rgba(104, 183, 56, 0.3);
+// }

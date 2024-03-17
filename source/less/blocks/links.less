@@ -60,8 +60,8 @@
   background-color: #d9d9d9;
   width: 280px;
   height: 1px;
-  left: -73px;
-  top: 45px;
+  left: -75px;
+  top: 43px;
 
   // Tablet
   @media (min-width: @tablet-width) {
@@ -75,4 +75,30 @@
 
 .links__logo-link:active {
   opacity: 0.6;
+}
+
+.links__logo-link:hover .logo-name__bottom:hover path {
+  fill: rgba(62, 62, 62, 1);
+}
+
+.links__logo-link:active .logo-name__bottom:hover path {
+  fill: rgba(107, 107, 107, 1);
+}
+
+.copyright:hover svg,
+.copyright:focus-visible svg {
+  fill: rgba(104, 183, 56, 1);
+  outline: none;
+}
+
+.copyright:focus-visible {
+  outline: none;
+}
+
+.copyright:active {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+.copyright:active svg {
+  fill: rgba(104, 183, 56, 0.3);
 }
