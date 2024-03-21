@@ -1,31 +1,21 @@
 // Mobile
 .form {
-  // margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 
   // Tablet
   @media (min-width: @tablet-width) {
-    // width: 668px;
+    margin-bottom: 60px;
   }
 
   // Desktop
   @media (min-width: @desktop-width) {
-    // width: 1220px;
     margin-bottom: 79px;
   }
 }
 
 .form__wrapper {
-  // width: 280px;
-  // margin: 0 auto;
-
   // Tablet
   @media (min-width: @tablet-width) {
-    // width: 709px;
-    // width: 628px;
-    // margin: 0 auto;
-    // padding-top: 0;
-    // margin-bottom: 66px;
   }
 }
 
@@ -35,8 +25,6 @@
 
   // Tablet
   @media (min-width: @tablet-width) {
-    // // width: 709px;
-    // width: 628px;
     margin: 0 auto;
     padding-top: 0;
     margin-bottom: 66px;
@@ -48,21 +36,34 @@
   }
 }
 
+.form__case {
+  // Tablet
+  @media (min-width: @tablet-width) {
+    padding: 0 44px 0 40px;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    padding: 0;
+  }
+}
+
 .form__wrapper--data {
-  margin-bottom: 46px;
+  margin-bottom: 22px;
   display: flex;
   flex-direction: column;
 
   // Tablet
   @media (min-width: @tablet-width) {
     margin-bottom: 72px;
+    padding: 0 40px;
   }
+
   // Desktop
   @media (min-width: @desktop-width) {
     width: 570px;
     margin: 0;
-    margin-right: 80px;
-    // margin-bottom: 70px;
+    padding: 0;
     position: relative;
   }
 }
@@ -70,77 +71,63 @@
 .form__wrapper--radio {
   width: 280px;
   margin: 0 auto;
-  padding: 22px 21px 19px 20px;
+  padding: 20px 21px 20px 20px;
 
   // Tablet
   @media (min-width: @tablet-width) {
     width: 628px;
-    padding: 23px 52px 27px 27px;
-    border: 1px solid #e7e7e7;
+    padding: 0;
   }
 
   // Desktop
   @media (min-width: @desktop-width) {
-    width: 510px;
-    padding: 26px 31px 26px 28px;
+    width: 570px;
+    // padding: 26px 31px 26px 28px;
+    // padding-right: 40px;
     margin: 0;
     border: 1px solid #e7e7e7;
-    // padding: 0;
-    // margin-bottom: 70px;
   }
 }
 
 .form__wrapper--contacts {
-  // width: 280px;
-  // margin: 0 auto;
   margin-bottom: 24px;
 
   // Tablet
   @media (min-width: @tablet-width) {
-    // width: 668px;
     margin-bottom: 65px;
   }
 
   // Desktop
   @media (min-width: @desktop-width) {
-    // width: 1220px;
     margin-bottom: 70px;
   }
 }
 
 .form__wrapper--comment {
-  // width: 280px;
-  // margin: 0 auto;
-  margin-bottom: 23px;
+  margin-bottom: 16px;
 
   // Tablet
   @media (min-width: @tablet-width) {
-    // width: 668px;
-    margin-bottom: 65px;
+    margin-bottom: 58px;
   }
 
   // Desktop
   @media (min-width: @desktop-width) {
-    // width: 1220px;
-    margin-bottom: 70px;
+    margin-bottom: 64px;
   }
 }
 
 .form__wrapper--checkbox {
-  // width: 280px;
-  // margin: 0 auto;
-  margin-bottom: 34px;
+  margin-bottom: 35px;
 
   // Tablet
   @media (min-width: @tablet-width) {
-    // width: 668px;
-    margin-bottom: 52px;
+    margin-bottom: 51px;
   }
 
   // Desktop
   @media (min-width: @desktop-width) {
-    // width: 1220px;
-    margin-bottom: 60px;
+    margin-bottom: 59px;
   }
 }
 
@@ -182,7 +169,7 @@
 
     // Tablet
     @media (min-width: @tablet-width) {
-      top: 21px;
+      top: 22px;
     }
   }
 }
@@ -233,11 +220,17 @@
 }
 
 .form__title--contacts {
-  margin: 0 75px 38px -20px;
+  margin: 0 75px 34px -20px;
 
   // Tablet
   @media (min-width: @tablet-width) {
-    margin-bottom: 76px;
+    margin-bottom: 75px;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    margin: 0 75px 75px -40px;
+    padding: 0 42px 0 40px;
   }
 }
 
@@ -246,7 +239,8 @@
 
   // Tablet
   @media (min-width: @tablet-width) {
-    margin-bottom: 87px;
+    margin: 0 0 87px -40px;
+    padding: 0 42px 0 40px;
   }
 
   // Desktop
@@ -261,6 +255,12 @@
   // Tablet
   @media (min-width: @tablet-width) {
     margin-bottom: 57px;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    margin: 0 0 56px -40px;
+    padding: 0 42px 0 40px;
   }
 }
 
@@ -294,7 +294,7 @@
   content: "";
   position: absolute;
   background-color: #d9d9d9;
-  width: 100;
+  width: 100%;
   height: 1px;
   top: 0;
   left: 0;
@@ -319,10 +319,9 @@
 
   @media (min-width: @desktop-width) {
     width: 1220px;
-    padding: 0 40px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 70px;
+    margin-bottom: 69px;
   }
 }
 
@@ -403,8 +402,7 @@
   text-transform: uppercase;
 
   border: 1px solid #e7e7e7;
-  // width: 100%;
-  height: 43px;
+  height: 42px;
   padding-left: 15px;
   padding-right: 15px;
   width: 120px;
@@ -412,10 +410,11 @@
 
   // Tablet
   @media (min-width: @tablet-width) {
-    height: 50px;
+    height: 49px;
     font-size: 20px;
     font-weight: 400;
     line-height: normal;
+    padding-left: 19px;
   }
 }
 
@@ -430,7 +429,7 @@
   outline: none;
 }
 
-.form__control:focus-visible + .form__control-svg path {
+.form__control:focus-visible + .form__control-svg {
   stroke: rgba(104, 183, 56, 1);
 }
 
@@ -525,42 +524,38 @@ input[type="number"] {
 
 .form__list--radio {
   margin: 0;
-  // padding: 22px 21px 19px 0;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    padding: 26px 52px 24px 27px;
+    border: 1px solid #e7e7e7;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    border: none;
+  }
 }
 
 .form__label--radio {
   position: relative;
   display: block;
-  padding-left: 45px;
+  padding-left: 43px;
+  padding-top: 2px;
 
   // Tablet
   @media (min-width: @tablet-width) {
-    padding-left: 60px;
+    padding-left: 56px;
+    margin-top: -5px;
   }
 }
 
 .form__control-radio {
   position: relative;
 }
-
-// .form__control-label {
-//   color: #444444;
-//   font-family: "Oswald", "Arial", sans-serif;
-//   font-size: 16px;
-//   font-weight: 400;
-//   line-height: 18px;
-//   text-transform: uppercase;
-
-//   // Tablet
-//   @media (min-width: @tablet-width) {
-//     font-size: 20px;
-//     font-weight: 400;
-//     line-height: normal;
-//   }
-// }
 
 .form__control-mark {
   position: absolute;
@@ -575,7 +570,7 @@ input[type="number"] {
   @media (min-width: @tablet-width) {
     width: 38px;
     height: 38px;
-    top: -5px;
+    top: -2px;
   }
 }
 
@@ -625,7 +620,7 @@ input[type="number"] {
 }
 
 .form__row--contacts {
-  margin-bottom: 14px;
+  margin-bottom: 20px;
   display: flex;
 
   // Desktop
@@ -640,7 +635,7 @@ input[type="number"] {
 }
 
 .form__label--contacts {
-  margin-right: 13px;
+  margin-right: 14px;
   display: flex;
   align-items: center;
 }
@@ -652,14 +647,14 @@ input[type="number"] {
 
   // Tablet
   @media (min-width: @tablet-width) {
-    right: 16px;
-    top: 19px;
+    right: 14px;
+    top: 17px;
   }
 
   // Desktop
   @media (min-width: @desktop-width) {
     right: 16px;
-    top: 19px;
+    top: 17px;
   }
 }
 
@@ -670,24 +665,24 @@ input[type="number"] {
 
   // Tablet
   @media (min-width: @tablet-width) {
-    right: 16px;
-    top: 19px;
+    right: 14px;
+    top: 17px;
   }
 
   // Desktop
   @media (min-width: @desktop-width) {
     right: 16px;
-    top: 19px;
+    top: 17px;
   }
 }
 
 // Comment
 .form__control--textarea {
   width: calc(100% - 32px);
-  height: 150px;
+  height: 121px;
   resize: none;
-  padding-top: 14px;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 43px;
 
   // // Tablet
   // @media (min-width: @tablet-width) {
@@ -713,7 +708,7 @@ input[type="number"] {
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 32px;
+    gap: 29px 62px;
   }
 
   // Desktop
@@ -724,7 +719,7 @@ input[type="number"] {
 }
 
 .form__list-item {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 
   // Tablet
   @media (min-width: @tablet-width) {
@@ -740,7 +735,6 @@ input[type="number"] {
   position: relative;
   padding-left: 45px;
   display: flex;
-  // align-items: center;
 
   // Tablet
   @media (min-width: @tablet-width) {
@@ -758,6 +752,7 @@ input[type="number"] {
 
   padding-top: 6px;
   padding-bottom: 6px;
+  padding-left: 1px;
 
   // Tablet
   @media (min-width: @tablet-width) {
@@ -772,18 +767,17 @@ input[type="number"] {
 }
 
 // Checkbox Tick
-// .form__control-checkbox[type="checkbox"]:checked
-//   + .form__control-mark--checkbox {
-//   background-image: url("../img/tick.svg");
-//   background-position: center;
-// }
+.form__control-checkbox:checked + span {
+  background-image: url("../img/tick.svg");
+  background-position: center;
+}
 
 .form__control-mark--checkbox {
   position: absolute;
   left: 0;
   top: 0;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   border: 1px solid #cdcdcd;
   background-repeat: no-repeat;
   background-position: 7px 7px;
@@ -793,7 +787,7 @@ input[type="number"] {
   // Tablet
   @media (min-width: @tablet-width) {
     width: 40px;
-    height: 40px;
+    height: 39px;
   }
 }
 
@@ -806,8 +800,6 @@ input[type="number"] {
 // Button
 .form__button-submit {
   display: flex;
-  // width: 280px;
-  // height: 40px;
   padding: 10px 78px 10px 78px;
   align-items: center;
   background: #68b738;
@@ -824,9 +816,8 @@ input[type="number"] {
 
   // Tablet
   @media (min-width: @tablet-width) {
-    margin-bottom: 0;
+    margin: 0 60px 0 20px;
     padding: 14px 65px 14px 65px;
-    margin-right: 60px;
 
     font-size: 20px;
     font-weight: 400;
@@ -835,7 +826,9 @@ input[type="number"] {
 
   // Desktop
   @media (min-width: @desktop-width) {
+    width: 570px;
     padding: 14px 208px 14px 208px;
+    margin: 0;
     margin-right: 80px;
   }
 }
@@ -865,6 +858,12 @@ input[type="number"] {
     font-weight: 400;
     line-height: 16px;
     margin-top: 17px;
+    margin-left: -1px;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    margin-left: -2px;
   }
 }
 
@@ -874,16 +873,8 @@ input[type="number"] {
   box-shadow: 0 0 0 1px @invalid;
 }
 
-.form__control--invalid + .form__control-svg path {
-  border: 1px solid @invalid;
-  box-shadow: 0 0 0 1px @invalid;
+.form__control--invalid + .form__control-svg {
+  // border: 1px solid @invalid;
+  // box-shadow: 0 0 0 1px @invalid;
   stroke: @invalid;
 }
-
-// .form__control--contacts + .invalid {
-//   border: 2px solid @invalid;
-// }
-
-// .invalid + .form__control--contacts {
-//   border: 2px solid @invalid;
-// }

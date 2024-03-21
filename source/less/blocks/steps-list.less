@@ -1,34 +1,34 @@
 // Mobile
 .steps-list {
   margin: 0;
+  margin-left: 2px;
   padding: 0;
   display: flex;
   flex-direction: column;
   list-style: none;
+  flex-wrap: wrap;
 
   // Tablet
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    // grid-template-columns: 324px 324px;
-    // gap: 37px 137px;
     row-gap: 37px;
-    flex-wrap: wrap;
   }
 
   // Desktop
   @media (min-width: @desktop-width) {
-    width: 1220px;
+    width: 1221px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
 .steps-list__item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
   position: relative;
 
   // Tablet
@@ -53,7 +53,7 @@
 .steps-list__item:nth-child(n) {
   // Tablet
   @media (min-width: @tablet-width) {
-    margin-right: 137px;
+    margin-right: 132px;
   }
 
   // Desktop
@@ -83,34 +83,31 @@
   }
 }
 
-.steps-list__item::before {
+.steps-list__item::after {
   content: "";
   position: absolute;
   background-color: #68b738;
-  width: 58px;
-  height: 58px;
+  width: 60px;
+  height: 60px;
   border: none;
   outline: 0;
-  top: 0;
-  left: 0;
+  top: -2px;
+  left: -2px;
 
   // Tablet
   @media (min-width: @tablet-width) {
+    content: "";
     position: absolute;
     background-color: #68b738;
     width: 80px;
     height: 80px;
-    border: none;
-    outline: none;
     top: 40px;
-    left: 0;
-    margin-right: 38px;
-    margin-bottom: 31px;
   }
 
-  // // Desktop
-  // @media (min-width: @desktop-width) {
-  // }
+  // Desktop
+  @media (min-width: @desktop-width) {
+    left: 1px;
+  }
 }
 
 .steps-list__icon {
@@ -118,18 +115,17 @@
   top: 50%;
   left: 10%;
   transform: translate(-50%, -50%);
+  z-index: 1;
+  width: 25px;
+  height: 28px;
 
   // Tablet
   @media (min-width: @tablet-width) {
-    position: absolute;
-    top: 78px;
+    top: 79px;
     left: 40px;
+    width: 30px;
+    height: 32px;
   }
-
-  // // Desktop
-  // @media (min-width: @desktop-width) {
-
-  // }
 }
 
 .steps-list__description {
@@ -139,7 +135,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  padding-left: 74px;
+  padding-left: 78px;
 
   // Tablet
   @media (min-width: @tablet-width) {
@@ -148,7 +144,6 @@
     top: 151px;
     padding: 0;
 
-    // min-width: 245px;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -156,9 +151,8 @@
 
   // Desktop
   @media (min-width: @desktop-width) {
-    top: 151px;
+    top: 150px;
     padding-left: 0;
-    // margin-top: 151px;
     margin-bottom: 57px;
   }
 }
@@ -183,8 +177,4 @@
     line-height: 280px;
     z-index: -1;
   }
-
-  // // Desktop
-  // @media (min-width: @desktop-width) {
-  // }
 }

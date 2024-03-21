@@ -4,6 +4,18 @@
   margin-bottom: 0;
   background-color: #eaeaea;
 
+  // Tablet
+  @media (min-width: @tablet-width) {
+    background-color: transparent;
+    background-image: linear-gradient(
+      to bottom,
+      #ffffff 0,
+      #ffffff 619px,
+      @lightgray 619px,
+      @lightgray 100%
+    );
+  }
+
   // Desktop
   @media (min-width: @desktop-width) {
     background-image: linear-gradient(
@@ -66,7 +78,7 @@
   // Tablet
   @media (min-width: @tablet-width) {
     position: relative;
-    margin-bottom: 116px;
+    margin-bottom: 104px;
   }
 
   // Desktop
@@ -74,7 +86,7 @@
     width: 436px;
     display: flex;
     flex-direction: column;
-    padding: 70px 784px 75px 0;
+    padding: 70px 784px 71px 0;
     position: relative;
     margin-bottom: 0;
   }
@@ -111,26 +123,37 @@
   justify-content: space-between;
   margin-bottom: 34px;
 
+  // Tablet
+  @media (min-width: @tablet-width) {
+    width: 367px;
+  }
+
   // Desktop
   @media (min-width: @desktop-width) {
     display: flex;
     width: 366px;
     justify-content: space-between;
-    margin-bottom: 60px;
+    margin-bottom: 84px;
   }
 }
 
 .example__item {
-  width: 124px;
-  height: 56px;
+  width: 123px;
+  height: 54px;
   border: #cdcdcd solid 1px;
   border-radius: 5px;
   position: relative;
 
+  // Tablet
+  @media (min-width: @tablet-width) {
+    width: 161px;
+    height: 71px;
+  }
+
   // Desktop
   @media (min-width: @desktop-width) {
     width: 160px;
-    height: 77px;
+    height: 72px;
     border: #cdcdcd solid 1px;
     border-radius: 5px;
     position: relative;
@@ -148,6 +171,15 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+  text-transform: uppercase;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 37px;
+    left: 56px;
+  }
 
   // Desktop
   @media (min-width: @desktop-width) {
@@ -164,6 +196,11 @@
 .example__numbers--days {
   left: 21px;
 
+  // Tablet
+  @media (min-width: @tablet-width) {
+    left: 30px;
+  }
+
   // Desktop
   @media (min-width: @desktop-width) {
     left: 31px;
@@ -171,11 +208,11 @@
 }
 
 .example__text {
-  max-width: 77px;
+  width: 77px;
   margin: 0;
   margin-top: 7px;
   position: absolute;
-  bottom: -15px;
+  bottom: -16px;
   left: 13px;
   background-color: #eaeaea;
   padding: 0 10px;
@@ -187,6 +224,18 @@
   font-weight: 400;
   line-height: 12px;
 
+  // Tablet
+  @media (min-width: @tablet-width) {
+    background-color: #ffffff;
+    width: 136px;
+    bottom: -5px;
+    left: 12px;
+    padding: 0;
+
+    font-size: 14px;
+    line-height: 14px;
+  }
+
   // Desktop
   @media (min-width: @desktop-width) {
     margin: 0;
@@ -197,18 +246,25 @@
 
     position: absolute;
     bottom: -5px;
-    left: 30px;
+    left: 1px;
     background-color: #f2f2f2;
     padding: 0 10px;
   }
 }
 
 .example__text--weight {
-  left: 24px;
+  left: 11px;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    left: 22px;
+    width: 102px;
+    padding: 0 7px;
+  }
 
   // Desktop
   @media (min-width: @desktop-width) {
-    left: 38px;
+    // left: 22px;
   }
 }
 
@@ -221,23 +277,24 @@
   line-height: 20px;
   text-transform: uppercase;
 
-  width: 188px;
+  width: 186px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 20px;
+  padding-bottom: 4px;
 
   // Tablet
   @media (min-width: @tablet-width) {
     font-size: 20px;
-    font-weight: 400;
     line-height: 20px;
 
+    // width: 174px;
     display: flex;
     flex-direction: column;
+    // justify-content: space-between;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 5px;
+    right: 1px;
     padding-bottom: 0;
     text-align: right;
   }
@@ -253,6 +310,10 @@
 
     position: absolute;
     left: 0;
-    bottom: 71px;
+    bottom: 68px;
   }
+}
+
+.example__expences span {
+  margin-bottom: 8px;
 }
