@@ -27,8 +27,8 @@
   background-color: #d9d9d9;
   width: 280px;
   height: 1px;
-  left: -73px;
-  top: 45px;
+  left: -75px;
+  top: 41px;
 
   // Tablet
   @media (min-width: @tablet-width) {
@@ -36,14 +36,13 @@
   }
 }
 
-.social__link:hover .social__svg path,
-.social__link:active .social__svg path,
-.social__link:focus-visible .social__svg path {
+.social__link:hover svg,
+.social__link:focus-visible svg {
   fill: rgba(104, 183, 56, 1);
 }
 
-.social__link:active .social__svg path {
-  opacity: 0.3;
+.social__link:active svg {
+  fill: rgba(104, 183, 56, 0.3);
 }
 
 .social__link:focus-visible {

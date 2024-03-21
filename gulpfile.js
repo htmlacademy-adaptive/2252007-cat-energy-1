@@ -7,6 +7,14 @@ import rename from "gulp-rename";
 import autoprefixer from "autoprefixer";
 import browser from "browser-sync";
 import htmlmin from "gulp-htmlmin";
+<<<<<<< HEAD
+=======
+import del from "del";
+import squoosh from "gulp-libsquoosh";
+import terser from "gulp-terser";
+import svgo from "gulp-svgmin";
+import svgstore from "gulp-svgstore";
+>>>>>>> 396d8d512ecfdac204cfc7b36bb4cbdb31217887
 
 // Styles
 
@@ -45,13 +53,27 @@ const images = () => {
     .pipe(gulp.dest("build/img"));
 };
 
+<<<<<<< HEAD
+=======
+const optimizeImages = () => {
+  return gulp
+    .src("source/img/**/*.{jpg,png}")
+    .pipe(squoosh())
+    .pipe(gulp.dest("build/img"));
+};
+
+>>>>>>> 396d8d512ecfdac204cfc7b36bb4cbdb31217887
 const copyImages = () => {
   return gulp.src("source/img/**/*.{jpg,png}").pipe(gulp.dest("build/img"));
 };
 
 // WebP
 
+<<<<<<< HEAD
 const createWebP = () => {
+=======
+const createWebp = () => {
+>>>>>>> 396d8d512ecfdac204cfc7b36bb4cbdb31217887
   return gulp
     .src("source/img/**/*.{jpg,png}")
     .pipe(squoosh({ webp: {} }))
@@ -77,16 +99,30 @@ const sprite = () => {
 
 // Copy
 
+<<<<<<< HEAD
+=======
+// const gulp = require("gulp");
+
+>>>>>>> 396d8d512ecfdac204cfc7b36bb4cbdb31217887
 const copy = (done) => {
   gulp
     .src(
       [
+<<<<<<< HEAD
         "source/fonts/*.{woff2,woff}",
         "source/*.ico",
         "source/less/manifest/webmanifest",
       ],
       {
         base: "sourse",
+=======
+        "source/fonts/**/*.{woff2,woff}",
+        "source/*.ico",
+        "source/manifest.webmanifest",
+      ],
+      {
+        base: "source",
+>>>>>>> 396d8d512ecfdac204cfc7b36bb4cbdb31217887
       }
     )
     .pipe(gulp.dest("build"));

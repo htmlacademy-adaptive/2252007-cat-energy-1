@@ -1,10 +1,12 @@
 // Mobile
 .steps-list {
   margin: 0;
+  margin-left: 2px;
   padding: 0;
   display: flex;
   flex-direction: column;
   list-style: none;
+  flex-wrap: wrap;
 
   // Tablet
   @media (min-width: @tablet-width) {
@@ -28,7 +30,7 @@
 .steps-list__item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
   position: relative;
 
   // Tablet
@@ -83,35 +85,35 @@
   }
 }
 
-.steps-list__item::before {
-  content: "";
-  position: absolute;
-  background-color: #68b738;
-  width: 58px;
-  height: 58px;
-  border: none;
-  outline: 0;
-  top: 0;
-  left: 0;
+// .steps-list__item::before {
+//   content: "";
+//   position: absolute;
+//   // background-color: #68b738;
+//   width: 58px;
+//   height: 58px;
+//   border: none;
+//   outline: 0;
+//   top: 0;
+//   left: 0;
 
-  // Tablet
-  @media (min-width: @tablet-width) {
-    position: absolute;
-    background-color: #68b738;
-    width: 80px;
-    height: 80px;
-    border: none;
-    outline: none;
-    top: 40px;
-    left: 0;
-    margin-right: 38px;
-    margin-bottom: 31px;
-  }
+//   // Tablet
+//   @media (min-width: @tablet-width) {
+//     position: absolute;
+//     background-color: #68b738;
+//     width: 80px;
+//     height: 80px;
+//     border: none;
+//     outline: none;
+//     top: 40px;
+//     left: 0;
+//     margin-right: 38px;
+//     margin-bottom: 31px;
+//   }
 
-  // // Desktop
-  // @media (min-width: @desktop-width) {
-  // }
-}
+//   // // Desktop
+//   // @media (min-width: @desktop-width) {
+//   // }
+// }
 
 .steps-list__icon {
   position: absolute;
@@ -139,7 +141,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
-  padding-left: 74px;
+  padding-left: 78px;
 
   // Tablet
   @media (min-width: @tablet-width) {
