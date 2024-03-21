@@ -12,7 +12,7 @@
   // Tablet
   @media (min-width: @tablet-width) {
     justify-content: space-between;
-    width: 436px;
+    width: 440px;
     margin: 0 auto;
     flex-direction: row;
     border-bottom: none;
@@ -21,9 +21,7 @@
   // Desktop
   @media (min-width: @desktop-width) {
     width: 475px;
-    // display: flex;
-    // justify-content: space-between;
-    align-content: flex-end;
+    // align-content: flex-end;
   }
 }
 
@@ -46,13 +44,13 @@
     outline: 2px solid #68b738;
     width: 100%;
     left: 0;
-    bottom: 10px;
+    bottom: 17px;
   }
 
-  // // Desktop
-  // @media (min-width: @desktop-width) {
-  //   outline: 2px solid #ffffff;
-  // }
+  // Desktop
+  @media (min-width: @desktop-width) {
+    bottom: 17px;
+  }
 }
 
 .nav-list__link:hover {
@@ -89,6 +87,12 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    line-height: normal;
   }
 }
 

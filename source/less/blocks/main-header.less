@@ -5,13 +5,13 @@
 
   // Tablet
   @media (min-width: @tablet-width) {
-    padding-top: 25px;
-    padding-bottom: 15px;
+    padding-top: 17px;
+    padding-bottom: 14px;
   }
 
   // Desktop
   @media (min-width: @desktop-width) {
-    padding-top: 55px;
+    padding-top: 49px;
   }
 
   &--index::before {
@@ -49,20 +49,20 @@
 
   // Tablet
   @media (min-width: @tablet-width) {
-    width: 708px;
+    width: 707px;
     margin: 0 auto;
     padding: 0 30px;
-    margin-bottom: 65px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 39px;
   }
 
   // Desktop
   @media (min-width: @desktop-width) {
-    width: 1220px;
+    width: 1217px;
     padding: 0 40px;
-    margin-bottom: 90px;
+    margin-bottom: 49px;
   }
 }
 
@@ -78,6 +78,8 @@
     padding: 0;
     width: auto;
     margin: 0;
+    margin-left: -3px;
+    margin-top: -3px;
   }
 }
 
@@ -89,19 +91,19 @@
 
   // Tablet
   @media (min-width: @tablet-width) {
-    width: 174px;
+    width: 176px;
   }
 
   // Desktop
   @media (min-width: @desktop-width) {
-    width: 202px;
+    width: 204px;
   }
 }
 
 .main-header__logo--image {
   // Tablet
   @media (min-width: @tablet-width) {
-    width: 60px;
+    width: 63px;
     height: 50px;
     flex-shrink: 0;
   }
@@ -116,6 +118,12 @@
 .main-header__logo--name {
   display: flex;
   // align-items: center;
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
 }
 
 .main-header__logo:hover {

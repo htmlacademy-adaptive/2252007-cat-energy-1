@@ -2,11 +2,11 @@
 .slider {
   width: 280px;
   position: relative;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
 
   // Tablet
   @media (min-width: @tablet-width) {
-    width: 709px;
+    width: 707px;
     // position: relative;
     padding-bottom: 101px;
   }
@@ -16,7 +16,7 @@
     position: absolute;
     // display: flex;
     top: 0;
-    right: 110px;
+    right: 39px;
     width: 560px;
     height: 512px;
     padding: 0;
@@ -26,6 +26,7 @@
 .slider__list {
   list-style: none;
   padding: 0;
+  margin-top: 8px;
 
   // Tablet
   @media (min-width: @tablet-width) {
@@ -52,8 +53,8 @@
     background-image: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 1) 0,
-      rgba(255, 255, 255, 1) 136px,
-      rgba(242, 242, 242, 1) 136px,
+      rgba(255, 255, 255, 1) 151px,
+      rgba(242, 242, 242, 1) 151px,
       rgba(242, 242, 242, 1) 100%
     );
     width: 40%;
@@ -61,6 +62,13 @@
 
   // Desktop
   @media (min-width: @desktop-width) {
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 1) 0,
+      rgba(255, 255, 255, 1) 136px,
+      rgba(242, 242, 242, 1) 136px,
+      rgba(242, 242, 242, 1) 100%
+    );
     width: 50%;
   }
 }
@@ -91,7 +99,7 @@
 
   // Tablet
   @media (min-width: @tablet-width) {
-    left: 357px;
+    left: 353px;
     height: 512px;
   }
 
