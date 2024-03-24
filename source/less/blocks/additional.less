@@ -149,6 +149,7 @@
     flex-direction: row;
     padding: 15px 0 13px;
     margin-bottom: 0;
+    align-items: flex-start;
   }
 }
 
@@ -289,6 +290,12 @@
     text-align: right;
     width: 90px;
   }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    width: 42px;
+    text-align: left;
+  }
 }
 
 .additional__button {
@@ -313,7 +320,7 @@
 
   // Desktop
   @media (min-width: @desktop-width) {
-    padding: 10px 92px 7px;
+    padding: 10px 92px 10px;
   }
 }
 
