@@ -3,7 +3,6 @@
   margin: 0 auto;
   padding-bottom: 35px;
   position: relative;
-
   // Tablet
   @media (min-width: @tablet-width) {
     padding-bottom: 75px;
@@ -74,10 +73,8 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
-
   position: relative;
   z-index: 2;
-
   display: inline-block;
   padding: 0 20px;
   background-color: #ffffff;
@@ -100,6 +97,7 @@
     padding-left: 40px;
     padding-right: 40px;
     margin-left: -36px;
+    margin-top: -1px;
   }
 }
 
@@ -131,7 +129,7 @@
   // Desktop
   @media (min-width: @desktop-width) {
     margin-bottom: 0;
-    margin-left: 6px;
+    margin-left: 4px;
     width: 895px;
     border: none;
   }
@@ -155,6 +153,7 @@
     flex-direction: row;
     padding: 15px 0 13px;
     margin-bottom: 0;
+    align-items: flex-start;
   }
 }
 
@@ -204,7 +203,6 @@
     content: "";
     bottom: -28px;
   }
-
   // Desktop
   @media (min-width: @desktop-width) {
     content: "";
@@ -220,7 +218,6 @@
   font-weight: 400;
   line-height: 16px;
   text-transform: uppercase;
-
   margin-top: 13px;
   margin-bottom: 13px;
 
@@ -274,6 +271,7 @@
   // Tablet
   @media (min-width: @tablet-width) {
     font-size: 16px;
+    font-weight: 400;
     line-height: 20px;
     text-align: right;
     margin: 0;
@@ -301,13 +299,18 @@
     text-align: right;
     width: 90px;
   }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    width: 42px;
+    text-align: left;
+  }
 }
 
 .additional__button {
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #68b738;
-
   color: #ffffff;
   text-align: center;
   font-family: "Oswald", "Arial", sans-serif;
@@ -319,7 +322,7 @@
 
   // Desktop
   @media (min-width: @desktop-width) {
-    padding: 10px 92px 7px;
+    padding: 10px 92px 9px;
   }
 }
 
@@ -406,7 +409,6 @@
   top: 187px;
   left: 58px;
   margin: 0;
-
   color: #ffffff;
   text-align: center;
   font-family: "Lato", "Arial", sans-serif;

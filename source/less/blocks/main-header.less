@@ -6,12 +6,13 @@
   // Tablet
   @media (min-width: @tablet-width) {
     padding-top: 17px;
-    padding-bottom: 14px;
+    padding-bottom: 15px;
   }
 
   // Desktop
   @media (min-width: @desktop-width) {
     padding-top: 49px;
+    padding-bottom: 14px;
   }
 
   &--index::before {
@@ -49,7 +50,7 @@
 
   // Tablet
   @media (min-width: @tablet-width) {
-    width: 707px;
+    width: 700px;
     margin: 0 auto;
     padding: 0 30px;
     display: flex;
@@ -67,11 +68,18 @@
   }
 }
 
+.main-header__wrapper--large {
+  // Desktop
+  @media (min-width: @desktop-width) {
+    margin-bottom: 49px;
+  }
+}
+
 .main-header__box {
   display: block;
   position: relative;
   width: 280px;
-  padding: 13px 20px 15px;
+  padding: 13px 20px 8px;
   margin: 0 auto;
 
   // Tablet
@@ -79,8 +87,8 @@
     padding: 0;
     width: auto;
     margin: 0;
-    margin-left: -3px;
     margin-top: -3px;
+    margin-left: -6px;
   }
 }
 
@@ -107,6 +115,7 @@
     width: 63px;
     height: 50px;
     flex-shrink: 0;
+    vertical-align: bottom;
   }
 
   // Desktop
@@ -118,6 +127,12 @@
 
 .main-header__logo--name {
   display: flex;
+  margin-top: -5px;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    margin-top: -1px;
+  }
 
   // Desktop
   @media (min-width: @desktop-width) {

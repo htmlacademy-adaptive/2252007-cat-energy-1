@@ -16,6 +16,7 @@
 .form__wrapper {
   // Tablet
   @media (min-width: @tablet-width) {
+    // width: 709px;
   }
 }
 
@@ -29,7 +30,6 @@
     padding-top: 0;
     margin-bottom: 66px;
   }
-
   // Desktop
   @media (min-width: @desktop-width) {
     width: 1220px;
@@ -39,7 +39,7 @@
 .form__case {
   // Tablet
   @media (min-width: @tablet-width) {
-    padding: 0 44px 0 40px;
+    padding: 0 41px 0 40px;
   }
 
   // Desktop
@@ -49,7 +49,7 @@
 }
 
 .form__wrapper--data {
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   display: flex;
   flex-direction: column;
 
@@ -71,7 +71,7 @@
 .form__wrapper--radio {
   width: 280px;
   margin: 0 auto;
-  padding: 20px 21px 20px 20px;
+  padding: 21px 21px 20px 20px;
 
   // Tablet
   @media (min-width: @tablet-width) {
@@ -103,20 +103,23 @@
 
 .form__wrapper--comment {
   margin-bottom: 16px;
+  width: 281px;
 
   // Tablet
   @media (min-width: @tablet-width) {
-    margin-bottom: 58px;
+    margin-bottom: 57px;
+    width: 708px;
   }
 
   // Desktop
   @media (min-width: @desktop-width) {
     margin-bottom: 64px;
+    width: 1220px;
   }
 }
 
 .form__wrapper--checkbox {
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 
   // Tablet
   @media (min-width: @tablet-width) {
@@ -201,10 +204,8 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;
-
   position: relative;
   z-index: 2;
-
   display: inline-block;
   background-color: #ffffff;
   padding: 0 20px;
@@ -296,7 +297,6 @@
   height: 1px;
   top: 0;
   left: 0;
-
   // Tablet
   @media (min-width: @tablet-width) {
     content: none;
@@ -312,7 +312,7 @@
     width: 708px;
     padding: 0 30px;
     margin: 0 auto;
-    margin-bottom: 65px;
+    margin-bottom: 67px;
   }
 
   @media (min-width: @desktop-width) {
@@ -354,13 +354,13 @@
 
 // Data
 .form__row {
-  margin-bottom: 14px;
+  margin-bottom: 13px;
   display: flex;
   position: relative;
 
   // Tablet
   @media (min-width: @tablet-width) {
-    margin-bottom: 20px;
+    margin-bottom: 19px;
   }
 }
 
@@ -387,7 +387,7 @@
 .form__label--data {
   display: flex;
   align-items: center;
-  margin-right: 13px;
+  margin-right: 14px;
 }
 
 .form__control {
@@ -453,13 +453,11 @@ input[type="number"] {
   position: relative;
   display: flex;
   align-items: center;
-
   // Tablet
   @media (min-width: @tablet-width) {
     height: 40px;
     width: 100%;
   }
-
   // Desktop
   @media (min-width: @desktop-width) {
     width: 100%;
@@ -527,13 +525,14 @@ input[type="number"] {
 
   // Tablet
   @media (min-width: @tablet-width) {
-    padding: 26px 52px 24px 27px;
+    padding: 23px 52px 24px 27px;
     border: 1px solid #e7e7e7;
   }
 
   // Desktop
   @media (min-width: @desktop-width) {
     border: none;
+    padding-top: 25px;
   }
 }
 
@@ -617,8 +616,13 @@ input[type="number"] {
 }
 
 .form__row--contacts {
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   display: flex;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    margin-bottom: 20px;
+  }
 
   // Desktop
   @media (min-width: @desktop-width) {
@@ -678,8 +682,20 @@ input[type="number"] {
   width: calc(100% - 32px);
   height: 121px;
   resize: none;
-  padding-top: 10px;
-  padding-bottom: 43px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  // Tablet
+  @media (min-width: @tablet-width) {
+    padding-top: 11px;
+    height: 121px;
+    padding-bottom: 43px;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    padding-top: 9px;
+  }
 }
 
 .form__control--textarea::placeholder {
@@ -711,7 +727,7 @@ input[type="number"] {
 }
 
 .form__list-item {
-  margin-bottom: 12px;
+  margin-bottom: 13px;
 
   // Tablet
   @media (min-width: @tablet-width) {
@@ -772,8 +788,8 @@ input[type="number"] {
   height: 28px;
   border: 1px solid #cdcdcd;
   background-repeat: no-repeat;
-  background-position: 7px 7px;
-  background-size: 26px;
+  // background-position: 7px 7px;
+  // background-size: 26px;
   border-radius: 0;
 
   // Tablet
@@ -796,7 +812,6 @@ input[type="number"] {
   align-items: center;
   background: #68b738;
   border: none;
-
   color: #ffffff;
   text-align: center;
   font-family: "Oswald", "Arial", sans-serif;
@@ -804,7 +819,7 @@ input[type="number"] {
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
 
   // Tablet
   @media (min-width: @tablet-width) {
@@ -855,6 +870,7 @@ input[type="number"] {
 
   // Desktop
   @media (min-width: @desktop-width) {
+    margin-top: 19px;
     margin-left: -2px;
   }
 }

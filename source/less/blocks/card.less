@@ -30,13 +30,12 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding: 19px 0 26px 0;
+  padding: 22px 0 24px 0;
 
   // Tablet
   @media (min-width: @tablet-width) {
     width: 250px;
-    padding: 10px 36px 37px 37px;
-
+    padding: 10px 36px 39px 37px;
     background-image: linear-gradient(
       to bottom,
       #ffffff 0,
@@ -50,7 +49,7 @@
   @media (min-width: @desktop-width) {
     width: 169px;
     margin: 0;
-    padding: 9px 38px 40px 39px;
+    padding: 10px 38px 40px 38px;
   }
 }
 
@@ -59,7 +58,7 @@
   @media (max-width: @mobile-width-only) {
     display: flex;
     flex-direction: row;
-    margin-bottom: 16px;
+    margin-bottom: 15px;
     width: 280px;
   }
 }
@@ -68,15 +67,14 @@
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  padding: 25px 0 25px 0;
+  padding: 26px 0 25px 0;
   margin: 0;
   align-items: center;
 
   // Tablet
   @media (min-width: @tablet-width) {
-    padding: 50px 35px 34px 40px;
+    padding: 50px 34px 36px 37px;
     margin: 0;
-
     background-color: #ffffff;
     background-image: none;
     border: 2px solid @lightgray;
@@ -86,7 +84,7 @@
   @media (min-width: @desktop-width) {
     width: 170px;
     margin: 0;
-    padding: 45px 37px 38px 40px;
+    padding: 51px 37px 41px 40px;
   }
 }
 
@@ -111,19 +109,22 @@
 }
 
 .card__image {
-  width: auto;
-  height: auto;
-  min-width: 140px;
-
-  min-height: 109px;
+  width: 140px;
+  height: 107px;
 
   // Tablet
   @media (min-width: @tablet-width) {
-    min-width: 161px;
-    max-width: 168px;
+    width: 200px;
+    height: 210px;
+    margin-top: 7px;
 
-    width: auto;
-    text-align: center;
+    // text-align: center;
+  }
+
+  // Desktop
+  @media (min-width: @desktop-width) {
+    width: 169px;
+    height: 210px;
   }
 }
 
@@ -138,7 +139,6 @@
   margin: 0;
   width: 76px;
   margin-bottom: 14px;
-
   color: #222222;
   text-align: left;
   font-family: "Oswald", "Arial", sans-serif;
@@ -153,7 +153,7 @@
     font-weight: 400;
     line-height: 24px;
     margin: 0 auto;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
     display: flex;
     text-align: center;
     width: 140px;
@@ -244,7 +244,6 @@
   justify-content: center;
   align-items: center;
   background-color: #68b738;
-
   color: #ffffff;
   text-align: center;
   font-family: "Oswald", "Arial", sans-serif;

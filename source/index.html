@@ -11,11 +11,24 @@
     <link rel="apple-touch-icon" href="img/favicons/icon-152.png" />
     <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest" />
+    <!-- Fonts -->
+    <link
+      rel="preload"
+      href="/js/script.min.js"
+      as="script"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="/img/bg-header@2x.jpg"
+      as="image"
+      crossorigin="anonymous"
+    />
   </head>
   <body class="page__body">
     <!-- Header -->
     <header class="main-header main-header--index">
-      <div class="main-header__wrapper">
+      <div class="main-header__wrapper main-header__wrapper--large">
         <div class="main-header__box">
           <a class="main-header__logo" href="">
             <picture>
@@ -49,6 +62,7 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
+
         <!-- Nav -->
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <ul class="main-nav__list nav-list nav-list--index">
@@ -182,8 +196,8 @@
               <!-- SVG -->
               <svg
                 class="steps-list__icon"
-                width="30"
-                height="32"
+                width="25"
+                height="28"
                 viewBox="0 0 25 28"
               >
                 <use xlink:href="img/sprite.svg#steps-item-1"></use>
@@ -194,13 +208,12 @@
               </p>
               <span class="steps-list__number">1</span>
             </li>
-
             <li class="steps-list__item">
               <!-- SVG -->
               <svg
                 class="steps-list__icon"
-                width="30"
-                height="32"
+                width="26"
+                height="29"
                 viewBox="0 0 26 29"
               >
                 <use xlink:href="img/sprite.svg#steps-item-2"></use>
@@ -211,7 +224,6 @@
               </p>
               <span class="steps-list__number">2</span>
             </li>
-
             <li class="steps-list__item">
               <!-- SVG -->
               <svg
@@ -228,7 +240,6 @@
               </p>
               <span class="steps-list__number">3</span>
             </li>
-
             <li class="steps-list__item">
               <!-- SVG -->
               <svg
@@ -461,7 +472,6 @@
         </div>
       </section>
     </footer>
-
     <script src="js/script.js"></script>
   </body>
 </html>
