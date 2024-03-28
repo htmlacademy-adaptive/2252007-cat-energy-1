@@ -1,9 +1,9 @@
 // Mobile
 .social {
   width: 132px;
-  height: 22px;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
+  // margin-bottom: 40px;
 
   // Tablet
   @media (min-width: @tablet-width) {
@@ -14,13 +14,14 @@
 }
 
 .social__list {
+  width: 132px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  justify-content: space-between;
   position: relative;
-  flex-wrap: wrap;
 
   // Tablet
   @media (min-width: @tablet-width) {
@@ -35,7 +36,7 @@
   width: 280px;
   height: 1px;
   left: -75px;
-  top: 41px;
+  bottom: -15px;
 
   // Tablet
   @media (min-width: @tablet-width) {
